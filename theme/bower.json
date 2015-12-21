@@ -1,0 +1,25 @@
+{
+  "name": "wp-theme",
+  "description": "A starter WordPress theme and workflow",
+  "main": "index.js",
+  "authors": [
+    "Alexander Persky"
+  ],
+  "license": "ISC",
+  "moduleType": [
+    "globals",
+    "node"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "foundation-sites": "~6.0.4"
+  }
+}
