@@ -108,7 +108,7 @@ var htmlSources = ['src/*.html'];
  *
  * @type {Array}
  */
-var sassSources = ['src/assets/scss/**/*.scss'];
+var sassSources = ['src/assets/scss/theme.scss'];
 
 /**
  * Define the source location or files for JS
@@ -177,11 +177,11 @@ gulp.task( 'sass', function() {
     .pipe( plumber() )
     .pipe( sass.sync( options.sass )
       .on( 'error', sass.logError ) )
-    .pipe( csslint() )
-    .pipe( csslint.reporter( 'text' ) )
-    .pipe( csslint.reporter( 'fail' ) )
+    // .pipe( csslint() )
+    // .pipe( csslint.reporter( 'text' ) )
+    // .pipe( csslint.reporter( 'fail' ) )
     .pipe( autoprefixer( {
-      browsers: [ 'last 2 versions' ]
+      browsers: [ 'last 2 versions', 'ie >= 9', 'and_chr >= 2.3' ]
     } ) )
     .pipe( sourcemaps.write() )
     .pipe( gulp.dest( 'src/assets/css/' ) )

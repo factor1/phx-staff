@@ -1,5 +1,7 @@
 <?php
-
+/*-----------------------------------------------------------------------------
+  Custom Copyright Code
+-----------------------------------------------------------------------------*/
 // automatically set the current date with protections and time spans
 function theme_copyright($year = 'auto') {
   if(intval($year) == 'auto'){ $year = date('Y'); }
