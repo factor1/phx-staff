@@ -40,7 +40,6 @@ Plugins
   gulp-zip          : Zip a directory
   vinyl-paths       : Get file paths within a stream
   gulp-util         : Adds basic utilities to plugins
-  gulp-coffee       : Compile CoffeeScript files
 
 ----------------------------------------------------------------------------*/
 
@@ -69,8 +68,7 @@ var gulp         = require( 'gulp' ),
     zip          = require( 'gulp-zip' ),
     vinylPaths   = require( 'vinyl-paths' ),
     notify       = require( 'gulp-notify' ),
-    gutil        = require( 'gulp-util' ),
-    coffee       = require( 'gulp-coffee' );
+    gutil        = require( 'gulp-util' );
 
 /*----------------------------------------------------------------------------
   # Options
@@ -89,10 +87,7 @@ var options = {
     outputStyle: 'expanded',
     precision: 10,
     sourceComments: true,
-  },
-  js: {},
-  images: {},
-  build: {}
+  }
 };
 /**
  * Define the source location or files for PHP
@@ -116,13 +111,6 @@ var htmlSources = ['src/*.html'];
 var sassSources = ['src/assets/scss/**/*.scss'];
 
 /**
- * Define the source location or files for CoffeeScript
- *
- * @type {Array}
- */
-var coffeeSources = ['src/assets/coffee/**/*.coffee'];
-
-/**
  * Define the source location or files for JS
  *
  * @type {Array}
@@ -139,7 +127,7 @@ var jsConcat = [
   'dist/assets/js/plugins/*.js',
   'dist/assets/js/*.js',
   '!dist/assets/js/*.min.js'
-]
+];
 
 /**
  * Define the source location or files for image compression
@@ -155,8 +143,6 @@ var imageSources = ['dist/assets/img/**/*'];
  */
 var copySources = [
   'src/**/*',
-  '!src/assets/coffee/',
-  '!src/assets/coffee/**/*',
   '!src/assets/scss/',
   '!src/assets/scss/**/*'
 ];
@@ -201,27 +187,8 @@ gulp.task( 'sass', function() {
     .pipe( gulp.dest( 'src/assets/css/' ) )
     .pipe( browserSync.reload( {
       stream: true
-    } ) )
+    } ) );
 } );
-
-/**
- * Compile CoffeeScript files into JS
- *
- * @param  {coffee} Compile CoffeeScript into JS
- *
- * @return {JS}     Compiled JS file
- */
-gulp.task('coffee', function(){
-  return gulp.src(coffeeSources)
-    .pipe(cache('brewing'))
-    .pipe( plumber() )
-    .pipe(coffee({bare:true})
-      .on('error', gutil.log))
-    .pipe(gulp.dest('src/assets/js'))
-    .pipe( browserSync.reload( {
-      stream: true
-    } ) )
-});
 
 // Lint JS
 gulp.task( 'lint', function() {
@@ -235,13 +202,13 @@ gulp.task( 'lint', function() {
     .pipe( sourcemaps.write() )
     .pipe( browserSync.reload( {
       stream: true
-    } ) )
+    } ) );
 } );
 
 // Launch a development server
 gulp.task( 'serve', function() {
   browserSync.init( {
-    proxy: "wp-dev:8888"
+    proxy: "phx-staff:8888"
       // port: 3000
   } );
 } );
@@ -253,7 +220,7 @@ gulp.task( 'serve', function() {
 // Copy into /dist folder
 gulp.task( 'copy', function(cb) {
   return gulp.src( copySources )
-    .pipe( gulp.dest( 'dist' ) )
+    .pipe( gulp.dest( 'dist' ) );
     cb;
 } );
 
@@ -267,7 +234,7 @@ gulp.task( 'optimize:css', ['copy'], function() {
     .pipe( gulp.dest( 'dist/assets/css/' ) )
     .pipe( rename( {
       suffix: '.min'
-    } ) )
+    } ) );
 } );
 
 
@@ -276,7 +243,7 @@ gulp.task( 'optimize:js', ['copy'], function() {
   return gulp.src( jsConcat )
     .pipe( concat( 'theme.min.js' ) )
     .pipe( gulpIf( '*.js', uglify() ) )
-    .pipe( gulp.dest( 'dist/assets/js' ) )
+    .pipe( gulp.dest( 'dist/assets/js' ) );
 } );
 
 // Optimize images
@@ -291,24 +258,23 @@ gulp.task( 'optimize:img', ['copy'], function() {
     .pipe( rename( {
       suffix: '-min'
     } ) )
-    .pipe( gulp.dest( 'dist/assets/img/' ) )
+    .pipe( gulp.dest( 'dist/assets/img/' ) );
 } );
 
 // Zip a directory
 gulp.task( 'zip', function() {
   return gulp.src( 'dist' )
     .pipe( zip( 'theme.zip' ) )
-    .pipe( gulp.dest( '/' ) )
+    .pipe( gulp.dest( '/' ) );
 } );
 
 /*----------------------------------------------------------------------------
   # Defaults
 ----------------------------------------------------------------------------*/
-gulp.task( 'default', [ 'sass', 'coffee', 'lint', 'serve', 'watch' ]);
+gulp.task( 'default', [ 'sass', 'lint', 'serve', 'watch' ]);
 
 gulp.task( 'watch', function() {
   gulp.watch( sassSources, [ 'sass' ] );
-  gulp.watch( coffeeSources, [ 'coffee' ] );
   gulp.watch( jsSources, [ 'lint' ] );
   gulp.watch( phpSources, browserSync.reload );
   gulp.watch( htmlSources, browserSync.reload );
@@ -316,4 +282,3 @@ gulp.task( 'watch', function() {
 } );
 
 gulp.task( 'build', ['copy', 'optimize:css', 'optimize:js', 'optimize:img']);
-
