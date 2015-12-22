@@ -1,0 +1,11 @@
+.menu {
+  a {
+    color          : $white-color;
+    text-decoration: none;
+    text-transform : uppercase;
+    
+    &:hover {
+      color: $green-color;
+    }
+  }
+}

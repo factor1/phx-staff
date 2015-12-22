@@ -36,10 +36,10 @@
 
     <div class="header-menu">
       <div class="mobile-menu hide-for-large"><!-- Mobile menu -->
-        Mobile Menu
+        <?php wp_nav_menu( array('theme_location' => 'primary', 'container' => 'nav')); ?>
       </div>
       <div class="desktop-menu show-for-large"><!-- Desktop menu -->
-        Desktop Menu
+        <?php wp_nav_menu( array('theme_location' => 'primary', 'container' => 'nav')); ?>
       </div>
     </div>
   </header><!-- Close Header -->

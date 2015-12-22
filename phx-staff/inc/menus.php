@@ -33,3 +33,35 @@ function f1_social_menu()
     );
   }
 }
+
+/*
+ * Customize the output of the default menus
+ *
+ * Only useful in situations where explicit control is needed over the output
+ * Note that the use of this menu requires the direct function call, not wp_nav_menu()
+ */
+function f1_primary_menu()
+{
+  if (has_nav_menu('primary')) {
+    wp_nav_menu(
+      array(
+        'theme_location'  => 'primary',
+        'menu'            => 'Primary',
+        'container'       => 'nav',
+        'container_class' => '',
+        'container_id'    => '',
+        'menu_class'      => '',
+        'menu_id'         => '',
+        'echo'            => true,
+        'fallback_cb'     => 'wp_page_menu',
+        'before'          => '',
+        'after'           => '',
+        'link_before'     => '',
+        'link_after'      => '',
+        'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+        'depth'           => 0,
+        'walker'          => ''
+      )
+    );
+  }
+}
