@@ -1,0 +1,59 @@
+// Footer styles
+footer {
+  
+}
+
+// contains the contact information
+.footer-connect {
+  background-color: $primary-color;
+  
+  i {
+    color: $white-color;
+  }
+
+  a {
+    color          : $green-color;
+    text-decoration: none;
+  }
+
+  .email {
+    
+  }
+  
+  .fax {
+    
+  }
+  
+  .social {
+    color: $white-color;
+    
+    i {
+      color: $green-color;
+    }
+  }
+}
+
+// contains the location information
+.footer-top {
+  background-color: $primary-med-color;
+  color           : $white-color;
+}
+
+.footer-widget {
+  h2 {
+    color      : $white-color;
+    margin     : 0;
+    padding    : 0;
+    line-height: normal;
+  }
+}
+
+// site credits and copyright
+.footer-bottom {
+  background-color: $primary-color;
+  
+  p {
+    color     : $white-color;
+    text-align: center;
+  }
+}

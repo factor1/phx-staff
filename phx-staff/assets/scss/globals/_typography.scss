@@ -3,7 +3,7 @@ h1 {
   font-family: $header-font;
   font-weight: $header-font-weight;
   font-size  : 5rem;
-  line-height: 5.5;
+  line-height: 5.5rem; // TODO: change all the line heights to unitless values
   margin     : rem(40) 0;
   color      : $white-color;
 }
@@ -12,7 +12,7 @@ h2 {
   font-family: $header-font;
   font-weight: $header-font-weight;
   font-size  : 2.5rem;
-  line-height: 3;
+  line-height: 3rem;
   margin     : rem(50) 0 rem(40);
   color      : $primary-light-color;
 }
@@ -21,7 +21,7 @@ h3 {
   font-family   : $header-font;
   font-weight   : $header-font-weight;
   font-size     : 1.5rem;
-  line-height   : 1.75;
+  line-height   : 1.75rem;
   text-transform: uppercase;
   margin        : rem(50) 0 rem(30);
   color         : $primary-light-color;
@@ -31,7 +31,7 @@ h4 {
   font-family   : $body-font;
   font-weight   : $header-font-weight;
   font-size     : 1rem;
-  line-height   : 1.5;
+  line-height   : 1.5rem;
   text-transform: uppercase;
   margin        : rem(40) 0 rem(20);
   color         : $alternate-color;
@@ -48,7 +48,7 @@ p {
 
 p.featured {
   font-size  : 1.5rem;
-  line-height: 1.875;
+  line-height: 1.875rem;
 }
 
 // Anchor styles

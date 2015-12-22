@@ -14,11 +14,38 @@ function f1_widgets_init()
     'after_title'   => '</h2>',
   ));
   register_sidebar( array(
-    'name'          => 'Footer Widget Area',
+    'name'          => 'Footer Widget Area 1',
     'id'            => 'footer-widget',
     'description'   => 'Appears in the footer area',
-    'before_widget' => '<nav class="footer-widget">',
-    'after_widget'  => '</nav>',
+    'before_widget' => '<div class="footer-widget">',
+    'after_widget'  => '</div>',
+    'before_title'  => '<h2>',
+    'after_title'   => '</h2>',
+  ) );
+  register_sidebar( array(
+    'name'          => 'Footer Widget Area 2',
+    'id'            => 'footer-widget-2',
+    'description'   => 'Appears in the footer area',
+    'before_widget' => '<div class="footer-widget">',
+    'after_widget'  => '</div>',
+    'before_title'  => '<h2>',
+    'after_title'   => '</h2>',
+  ) );
+  register_sidebar( array(
+    'name'          => 'Footer Widget Area 3',
+    'id'            => 'footer-widget-3',
+    'description'   => 'Appears in the footer area',
+    'before_widget' => '<div class="footer-widget">',
+    'after_widget'  => '</div>',
+    'before_title'  => '<h2>',
+    'after_title'   => '</h2>',
+  ) );
+  register_sidebar( array(
+    'name'          => 'Footer Widget Area 4',
+    'id'            => 'footer-widget-4',
+    'description'   => 'Appears in the footer area',
+    'before_widget' => '<div class="footer-widget">',
+    'after_widget'  => '</div>',
     'before_title'  => '<h2>',
     'after_title'   => '</h2>',
   ) );
