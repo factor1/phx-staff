@@ -1,0 +1,42 @@
+// Hero styles - with featured image
+.hero {
+  max-width      : 100%;
+  height         : rem(500);
+  max-height     : rem(500);
+  background-size: cover !important;
+  
+  .page-title {
+    position        : relative;
+    top             : 100%;
+    transform       : translateY(-100%);
+    background-color: rgba(0,0,0,.5);
+    @include linear-gradient(rgba(0,0,0,.01), rgba(0,0,0,.8) 70%);
+    
+    h1 {
+      margin        : 0;
+      padding       : 0;
+      line-height   : normal;
+      color         : $white-color;
+      font-size     : rem(80);
+      text-transform: uppercase;
+      text-align    : center;
+    }
+  }
+}
+
+// Without featured image
+.banner {
+  background-color: $primary-med-color;
+  
+  .page-title {
+    h1 {
+      margin        : 0;
+      padding       : 0;
+      line-height   : normal;
+      color         : $white-color;
+      font-size     : rem(80);
+      text-transform: uppercase;
+      text-align    : center;
+    }
+  }
+}
