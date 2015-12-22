@@ -1,0 +1,12 @@
+// Header styles - mobile
+.mobile-header {
+  .row {
+    div:nth-child(1) {
+      background-color: red;
+    }
+
+    div:nth-child(2) {
+      background-color: green;
+    }
+  }
+}

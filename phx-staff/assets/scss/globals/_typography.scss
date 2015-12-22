@@ -1,0 +1,66 @@
+// Header styles
+h1 {
+  font-family: $header-font;
+  font-weight: $header-font-weight;
+  font-size  : 5rem;
+  line-height: 5.5;
+  margin     : 40px 0;
+  color      : #fff;
+}
+
+h2 {
+  font-family: $header-font;
+  font-weight: $header-font-weight;
+  font-size  : 2.5rem;
+  line-height: 3;
+  margin     : 50px 0 40px;
+  color      : $primary-light-color;
+}
+
+h3 {
+  font-family   : $header-font;
+  font-weight   : $header-font-weight;
+  font-size     : 1.5rem;
+  line-height   : 1.75;
+  text-transform: uppercase;
+  margin        : 50px 0 30px;
+  color         : $primary-light-color;
+}
+
+h4 {
+  font-family   : $body-font;
+  font-weight   : $header-font-weight;
+  font-size     : 1rem;
+  line-height   : 1.5;
+  text-transform: uppercase;
+  margin        : 40px 0 20px;
+  color         : $alternate-color;
+}
+
+// Paragraph styles
+p {
+  font-family: $body-font;
+  font-size  : 1rem;
+  font-weight: $body-font-weight;
+  line-height: $body-line-height;
+  color      : $body-color;
+}
+
+p.featured {
+  font-size  : 1.5rem;
+  line-height: 1.875;
+}
+
+// Anchor styles
+a {
+  font-family    : $body-font;
+  font-size      : 1rem;
+  font-weight    : $header-font-weight;
+  line-height    : $body-line-height;
+  text-decoration: underline;
+  color          : $primary-light-color;
+  
+  &:hover {
+    color: $green-color;
+  }
+}
