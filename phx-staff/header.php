@@ -21,26 +21,27 @@
 
 <body <?php body_class(); ?>>
 
-  <header class="mobile-header hide-for-large"><!-- Mobile Header -->
-    <div class="expanded row">
-      <div class="small-9 columns">
-        Logo here
-      </div>
-      <div class="small-3 columns">
-        Menu
-      </div>
+  <header><!-- Header -->
+    <div class="header-logo">
+      <?php if (get_field('logo', 'option')) : ?>
+        <h1 class="logo" style="background: url('<?php the_field('logo', 'option'); ?>') center center no-repeat">
+          <a href="<?php echo esc_url(home_url('/')); ?>">Phoenix Staff</a>
+        </h1>
+      <?php else : ?>
+        <h1 class="logo" style="background: url('<?php echo get_template_directory_uri(); ?>/assets/img/PhoenixStaff-logo.png') center center no-repeat">
+          <a href="<?php echo esc_url(home_url('/')); ?>">Phoenix Staff</a>
+        </h1>
+      <?php endif; ?>
     </div>
-  </header><!-- Close Mobile Header -->
 
-  <header class="desktop-header show-for-large"><!-- Desktop Header -->
-    <div class="expanded row">
-      <div class="small-9 columns">
-        Logo here
+    <div class="header-menu">
+      <div class="mobile-menu hide-for-large"><!-- Mobile menu -->
+        Mobile Menu
       </div>
-      <div class="small-3 columns">
-        Menu
+      <div class="desktop-menu show-for-large"><!-- Desktop menu -->
+        Desktop Menu
       </div>
     </div>
-  </header><!-- Close Desktop Header -->
+  </header><!-- Close Header -->
 
   <main><!-- Main -->

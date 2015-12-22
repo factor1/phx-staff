@@ -61,6 +61,11 @@ require get_template_directory() . '/inc/menus.php';
 require get_template_directory() . '/inc/widgets.php';
 
 /**
+ * Load factor1 ACF
+ */
+require get_template_directory() . '/inc/acf.php';
+
+/**
  * Load factor1 tweaks
  */
 require get_template_directory() . '/inc/tweaks.php';
