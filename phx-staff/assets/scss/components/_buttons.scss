@@ -1,0 +1,20 @@
+// Button styles
+button,
+.button {
+  padding         : rem(10) rem(60);
+  font-family     : $header-font;
+  font-size       : rem(18);
+  font-weight     : 700;
+  text-transform  : uppercase;
+  color           : $white-color;
+  text-decoration : none;
+  background-color: $primary-med-color;
+  
+  &:hover {
+    background-color: $alternate-color;
+  }
+}
+
+.round {
+  border-radius: rem(50);
+}

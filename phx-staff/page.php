@@ -17,5 +17,4 @@ get_template_part('parts/hero');
   </section>
 <?php endwhile; endif; ?>
 
-
 <?php get_footer(); ?>

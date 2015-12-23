@@ -25,7 +25,7 @@ function f1_continue_reading_link()
  */
 function f1_auto_excerpt_more($more)
 {
-  return ' &hellip;' . f1_continue_reading_link();
+  return ' &hellip;';
 }
 add_filter('excerpt_more', 'f1_auto_excerpt_more');
 

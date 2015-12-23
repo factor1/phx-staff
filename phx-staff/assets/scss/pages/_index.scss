@@ -1,8 +1,54 @@
-// Default Template styles
-.main-content {
-  padding: rem(75) 0;
+// Default blogroll styles
+article {
+  border-bottom: 1px solid $gray-med-color;
+  padding      : rem(50) 0;
   
-  h1 {
-    color: $primary-color;
+  &:first-of-type {
+    padding: 0 0 rem(50);
+  }
+
+  &:last-of-type {
+    border: none;
+  }
+
+  // Read More button spacing
+  .button {
+    margin-top: rem(20);
+  }
+}
+
+.blogroll-title {
+  margin     : 0;
+  line-height: normal;
+  font-size  : 3rem;
+  
+  a {
+    margin         : 0;
+    font-family    : $header-font;
+    font-weight    : $header-font-weight;
+    font-size      : inherit;
+    line-height    : normal;
+    text-decoration: none;
+  }
+}
+
+// Post meta box
+.meta,
+.comments-link {
+  padding        : 0 0 rem(40);
+  font-family    : $header-font;
+  font-size      : 1.5rem;
+  font-weight    : 400;
+  color          : $gray-med-color;
+  text-transform : uppercase;
+  text-decoration: none;
+}
+
+// Read more button positioning
+.read-more {
+  text-align: center;
+  
+  @media screen and (min-width: rem(640)) {
+    text-align: left;
   }
 }
