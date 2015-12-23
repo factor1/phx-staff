@@ -4,7 +4,6 @@
  *
  * Template file including the head of the document and primary navigation
  */
-
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
