@@ -4,9 +4,9 @@
 -----------------------------------------------------------------------------*/
 function custom_menus() {
   register_nav_menus(array(
-    'primary' => esc_html__('Primary Menu', 'phx-staff'),
-    'footer'  => esc_html__('Footer Menu', 'phx-staff'),
-    'social'  => esc_html__('Social Menu', 'phx-staff'),
+    'primary' => __('Primary Menu', 'phx-staff'),
+    'footer'  => __('Footer Menu', 'phx-staff'),
+    'social'  => __('Social Menu', 'phx-staff'),
   ));
 }
 add_action( 'init', 'custom_menus' );

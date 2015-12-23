@@ -20,9 +20,6 @@ if (!function_exists('f1_features')) {
     // Add theme support for document Title tag
     add_theme_support('title-tag');
 
-    // Add theme support for custom menus
-    add_theme_support('menus');
-
     // Clean up the default WordPress head section
     remove_action('wp_head', 'rsd_link');
     remove_action('wp_head', 'wlwmanifest_link');

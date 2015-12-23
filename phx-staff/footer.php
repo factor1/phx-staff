@@ -13,9 +13,9 @@
   <footer><!-- Footer -->
     <section class="footer-connect">
       <div class="row">
-        <div class="small-12 medium-6 columns">
+        <div class="small-12 large-6 columns text-center">
           <span class="email">
-            <i class="fa fa-envelope-o"></i>
+            <i class="fa fa-envelope"></i>
             <?php if( get_field( 'email', 'option' ) ) : ?>
               <a href="mailto:<?php the_field( 'email', 'option' ); ?>"><?php the_field( 'email', 'option' ); ?></a>
             <?php else : ?>
@@ -33,7 +33,7 @@
           </span>
         </div>
 
-        <div class="small-12 medium-6 columns">
+        <div class="small-12 large-6 columns text-center">
           <?php if( have_rows('social_profiles', 'option') ): ?>
             <span class="social">
               Let&rsquo;s Connect:
@@ -49,7 +49,7 @@
     </section>
 
     <section class="footer-top">
-      <div class="hide-for-large"><!-- Mobile only -->
+      <div class="hide-for-medium"><!-- Mobile only -->
         <div class="row">
           <div class="small-6 columns">
             <?php if(is_active_sidebar('footer-widget')) dynamic_sidebar('footer-widget'); ?>
@@ -68,7 +68,7 @@
         </div>
       </div>
 
-      <div class="show-for-large"><!-- Desktop only -->
+      <div class="show-for-medium"><!-- Desktop only -->
         <div class="row">
           <div class="medium-3 columns">
             <?php if(is_active_sidebar('footer-widget')) dynamic_sidebar('footer-widget'); ?>
@@ -87,7 +87,7 @@
     </section>
 
     <section class="footer-bottom">
-      <p class="copyright">Site by <strong>factor1</strong></p>
+      <a class="copyright" href="http://factor1studios.com" target="_blank">Site by <strong>factor1</strong></a>
     </section>
   </footer><!-- Close Footer -->
 

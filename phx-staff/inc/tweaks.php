@@ -17,7 +17,7 @@ add_action('init', 'f1_page_excerpt');
  */
 function f1_continue_reading_link()
 {
-  return ' <a href="'.get_permalink().'">'.__('Continue reading <span class="meta-nav">&rarr;</span>', 'f1').'</a>';
+  return ' <a href="' . get_permalink() . '">' . __('Continue reading <span class="meta-nav">&rarr;</span>', 'phx-staff') . '</a>';
 }
 
 /**
@@ -25,7 +25,7 @@ function f1_continue_reading_link()
  */
 function f1_auto_excerpt_more($more)
 {
-  return ' &hellip;'.f1_continue_reading_link();
+  return ' &hellip;' . f1_continue_reading_link();
 }
 add_filter('excerpt_more', 'f1_auto_excerpt_more');
 
