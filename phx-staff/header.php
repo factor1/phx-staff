@@ -15,7 +15,9 @@
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
   <?php endif; ?>
 
-  <?php wp_head(); ?>
+  <?php
+  gravity_form_enqueue_scripts( 1, true );
+  wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>

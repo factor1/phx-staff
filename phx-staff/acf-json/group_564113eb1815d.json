@@ -1267,7 +1267,7 @@
         {
             "key": "field_56799b4d43b60",
             "label": "City",
-            "name": "vegas__city",
+            "name": "vegas_city",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -1466,5 +1466,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1450825341
+    "modified": 1451326106
 }

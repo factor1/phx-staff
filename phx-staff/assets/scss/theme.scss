@@ -32,7 +32,9 @@
 // Template pages
 @import 'pages/page';
 @import 'pages/index';
+@import 'pages/contact';
 
 /*----------------------------------------------------------------------------
   Plugins
 ----------------------------------------------------------------------------*/
+@import 'plugins/overrides';

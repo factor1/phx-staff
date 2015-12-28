@@ -1,0 +1,39 @@
+/*----------------------------------------------------------------------------
+  Plugin Overrides (WordPress and 3rd Party)
+----------------------------------------------------------------------------*/
+// Gravity Forms
+// Make the labels look like h3
+.gform_wrapper .top_label .gfield_label {
+  font-family   : $header-font;
+  font-weight   : $header-font-weight;
+  font-size     : 1.5rem;
+  line-height   : 1.75rem;
+  text-transform: uppercase;
+  color         : $primary-light-color;
+}
+
+// Adjust the border of the inputs
+[type='text'],
+[type='password'],
+[type='date'],
+[type='datetime'],
+[type='datetime-local'],
+[type='month'],
+[type='week'],
+[type='email'],
+[type='number'],
+[type='search'],
+[type='tel'],
+[type='time'],
+[type='url'],
+[type='color'],
+textarea {
+  border       : em(1) solid $map-border-color;
+  border-radius: 0;
+}
+
+// Adjust the submit button
+[type='submit'],
+[type='button'] {
+  border-radius: em(50);
+}

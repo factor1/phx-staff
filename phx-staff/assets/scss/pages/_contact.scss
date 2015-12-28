@@ -1,0 +1,27 @@
+/*----------------------------------------------------------------------------
+  Contact Us
+----------------------------------------------------------------------------*/
+.offices {
+  padding         : rem(50) 0;
+  background-color: $gray-color;
+}
+
+.location-map {
+  border: em(1) solid $map-border-color;
+}
+
+.location-info {
+  h3 {
+    margin: rem(20) 0;
+  }
+
+  p {
+    margin-bottom: rem(5);
+    font-size    : .9rem;
+    line-height  : 1.625rem;
+    
+    a {
+      font-size: inherit;
+    }
+  }
+}
