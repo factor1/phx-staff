@@ -4,8 +4,8 @@
  */
 
 get_header();
-get_template_part('parts/hero');
-?>
+get_template_part('parts/hero'); ?>
+
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
   <section class="main-content">
@@ -18,5 +18,5 @@ get_template_part('parts/hero');
 <?php endwhile; endif; ?>
 
 
-
-<?php get_footer(); ?>
+<?php
+get_footer();

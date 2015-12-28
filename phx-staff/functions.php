@@ -76,3 +76,8 @@ require get_template_directory() . '/inc/whitelabel.php';
  * Load factor1 copyright
  */
 require get_template_directory() . '/inc/copyright.php';
+
+/**
+ * Load Shortcode Maker
+ */
+require get_template_directory() . '/inc/shortcode_maker.php';

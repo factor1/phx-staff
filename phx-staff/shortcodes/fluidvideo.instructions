@@ -1,0 +1,3 @@
+Add the URL for the video you wish to use as a variable inside of the shortcode.
+<br>
+Example: [fluidvideo url="video-url-here"]

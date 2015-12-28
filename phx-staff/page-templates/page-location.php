@@ -4,9 +4,9 @@
  */
 
 get_header();
-get_template_part('parts/hero');
-?>
+get_template_part('parts/hero'); ?>
 
 
 
-<?php get_footer(); ?>
+<?php
+get_footer();
