@@ -37,3 +37,60 @@ textarea {
 [type='button'] {
   border-radius: em(50);
 }
+
+// Staff Grid
+.staff-item {
+  text-align     : center;
+  text-decoration: none;
+  color          : $white-color;
+  
+  &:hover {
+    color: $primary-light-color;
+    
+    .f1_mentor_photo_container img:nth-child(2) {
+      display: block;
+    }
+  }
+}
+
+.f1_mentor_photo_container {
+  position: relative;
+  margin  : 0 auto;
+  overflow: hidden;
+  width   : rem(100);
+  height  : rem(100);
+  
+  img {
+    width        : rem(100);
+    height       : rem(100);
+    border-radius: rem(100);
+  }
+
+  img:nth-child(2) {
+    display      : none;
+    position     : absolute;
+    top          : 0;
+    left         : 0;
+    border-radius: none;
+  }
+}
+
+.f1_mentor_summary_name {
+  padding-top   : rem(15);
+  font-family   : $header-font;
+  font-weight   : 700;
+  font-size     : 1.5rem;
+  text-transform: uppercase;
+}
+
+.f1_mentor_summary_title {
+  font-family: $body-font;
+  font-size  : 1rem;
+  font-weight: $body-font-weight;
+  line-height: $body-line-height;
+}
+
+.remodal-close:hover,
+.remodal-close:active {
+  background: transparent;
+}

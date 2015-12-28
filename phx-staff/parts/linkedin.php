@@ -6,5 +6,5 @@
  ?>
 
 <div class="linkedin-cta">
-  <a href="#" target="_blank">Join our LinkedIN Network <img src="<?php echo get_template_directory_uri(); ?>/assets/img/LinkedinAd.png" alt="Join Phoenix Staff on LinkedIN"></a>
+  <h2>Join our LinkedIN Network <img src="<?php echo get_template_directory_uri(); ?>/assets/img/LinkedinAd.png" alt="Join Phoenix Staff on LinkedIN"></h2>
 </div>
