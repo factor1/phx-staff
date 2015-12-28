@@ -103,7 +103,7 @@
     margin         : 0;
     padding        : 0 0 rem(5);
     font-size      : .8rem;
-    line-height    : 1.25rem;
+    line-height    : 1.625rem;
     color          : $white-color;
     text-decoration: none;
     font-weight    : 400;
@@ -127,7 +127,8 @@
       margin        : 0;
       padding       : 0 !important;
       font-size     : 1.5rem;
-      line-height   : 1.875rem;
+      font-weight   : 700;
+      line-height   : 1.875rem !important;
       text-transform: none;
       
       &:hover {

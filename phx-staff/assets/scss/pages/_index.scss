@@ -2,7 +2,7 @@
   Index.php styles (default blogroll)
 ----------------------------------------------------------------------------*/
 article {
-  border-bottom: 1px solid $gray-med-color;
+  border-bottom: 1px solid $blog-border-color;
   padding      : rem(50) 0;
   
   &:first-of-type {
@@ -19,10 +19,16 @@ article {
   }
 }
 
+.with-thumbnail {
+  img {
+    width : rem(245);
+    height: rem(200);
+  }
+}
+
 .blogroll-title {
   margin     : 0;
   line-height: normal;
-  font-size  : 3rem;
   
   a {
     margin         : 0;
@@ -41,6 +47,7 @@ article {
   font-family    : $header-font;
   font-size      : 1.5rem;
   font-weight    : 400;
+  line-height    : 1.75rem;
   color          : $gray-med-color;
   text-transform : uppercase;
   text-decoration: none;
@@ -52,5 +59,24 @@ article {
   
   @media screen and (min-width: rem(640)) {
     text-align: left;
+  }
+}
+
+// Post tags
+.tags {
+  color     : $gray-med-color;
+  text-align: center;
+  
+  @media screen and (min-width: rem(1000)) {
+    text-align: left;
+  }
+
+  a {
+    font-family    : $body-font;
+    font-weight    : 400;
+    font-size      : .75rem;
+    text-transform : uppercase;
+    text-decoration: none;
+    color          : $gray-med-color;
   }
 }

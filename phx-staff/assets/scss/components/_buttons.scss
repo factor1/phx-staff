@@ -3,20 +3,20 @@
 ----------------------------------------------------------------------------*/
 button,
 .button {
-  padding         : rem(10) rem(60);
+  padding         : em(15) em(60);
   font-family     : $header-font;
-  font-size       : rem(18);
+  font-size       : em(18);
   font-weight     : 700;
   text-transform  : uppercase;
-  color           : $white-color;
   text-decoration : none;
+  color           : $white-color;
   background-color: $primary-med-color;
   
   &:hover {
-    background-color: $alternate-color;
+    background-color: $green-color;
   }
 }
 
 .round {
-  border-radius: rem(50);
+  border-radius: em(50);
 }
