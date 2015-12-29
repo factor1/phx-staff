@@ -1,7 +1,9 @@
 /*----------------------------------------------------------------------------
   Plugin Overrides (WordPress and 3rd Party)
 ----------------------------------------------------------------------------*/
-// Gravity Forms
+/**
+ * Gravity Forms
+ */
 // Make the labels look like h3
 .gform_wrapper .top_label .gfield_label {
   font-family   : $header-font;
@@ -38,7 +40,10 @@ textarea {
   border-radius: em(50);
 }
 
-// Staff Grid
+/**
+ * Staff Grid
+ */
+// style the staff grid
 .staff-item {
   text-align     : center;
   text-decoration: none;
@@ -90,7 +95,71 @@ textarea {
   line-height: $body-line-height;
 }
 
+// style the modal window
+.remodal {
+  padding      : em(50);
+  max-width    : rem(500);
+  border       : em(1) solid $map-border-color;
+  border-radius: 0;
+  text-align   : center;
+}
+
+// style the close button
+.remodal-close {
+  top : em(15);
+  left: 90%;
+  
+  &::after {
+    content    : '\f057';
+    font-family: 'FontAwesome' !important;
+    font-size  : em(36);
+    color      : $map-border-color;
+  }
+}
+
+.remodal-close:hover.remodal-close:after,
+.remodal-close:active.remodal-close:after {
+  content    : '\f057';
+  font-family: 'FontAwesome' !important;
+  font-size  : em(36);
+  color      : $map-border-color;
+}
+
 .remodal-close:hover,
 .remodal-close:active {
-  background: transparent;
+  background: $remodal-close-color;
+}
+
+// style the modal content
+.f1_mentor_details_photo_container {
+  margin-bottom: em(20);
+  text-align   : center;
+  
+  img {
+    width        : rem(100);
+    height       : rem(100);
+    border-radius: rem(100);
+  }
+}
+
+.f1_mentor_details_name {
+  h2 {
+    margin: 0;
+  }
+
+  p {
+    color : $primary-color;
+    margin: 0;
+  }
+}
+
+.f1_mentor_details_social_container {
+  a {
+    text-decoration: none;
+  }
+
+  .fa-lg {
+    padding  : em(20) em(5);
+    font-size: 1.5em;
+  }
 }
