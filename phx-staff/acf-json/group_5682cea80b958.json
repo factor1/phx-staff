@@ -174,7 +174,7 @@
                     "label": "Job Title",
                     "name": "location_job_title",
                     "type": "text",
-                    "instructions": "Enter the job title",
+                    "instructions": "Enter the job title (75 character limit)",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
@@ -186,7 +186,7 @@
                     "placeholder": "",
                     "prepend": "",
                     "append": "",
-                    "maxlength": "",
+                    "maxlength": 75,
                     "readonly": 0,
                     "disabled": 0
                 },
@@ -242,5 +242,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1451420420
+    "modified": 1451428226
 }

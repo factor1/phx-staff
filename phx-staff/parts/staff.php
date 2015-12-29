@@ -26,7 +26,7 @@
         $staffgrid = get_posts($args);
         foreach ($staffgrid as $post) :  setup_postdata($post); ?>
 
-          <div class="column">
+          <div class="column"><?php // TODO: can these be centered from the start? ?>
             <a class="staff-item" data-remodal-target="modal-<?php the_ID(); ?>">
               <div class="f1_mentor_photo_container">
                 <?php if (has_post_thumbnail()) the_post_thumbnail(); ?>

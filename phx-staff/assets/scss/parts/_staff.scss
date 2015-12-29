@@ -1,0 +1,17 @@
+/*----------------------------------------------------------------------------
+  Staff grid section
+----------------------------------------------------------------------------*/
+.staff {
+  padding         : rem(75) 0;
+  background-color: $alternate-color;
+  
+  h2 {
+    margin-top: 0;
+    text-align: center;
+    color     : $white-color;
+  }
+
+  .column {
+    padding-bottom: rem(40);
+  }
+}

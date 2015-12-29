@@ -19,26 +19,53 @@
     margin    : 0 0 rem(40);
     text-align: center;
   }
+
+  a {
+    text-decoration: none;
+    
+    &:hover {
+      .job-item,
+       {
+        border: em(1) solid $green-color;
+      }
+
+      .job-image {
+        border-right    : em(1) solid $green-color;
+        background-color: $white-color !important;
+      }
+    }
+  }
 }
 
 .job-item {
   margin          : 0 0 rem(30);
-  height          : rem(110);
-  clear           : both;
+  min-height      : rem(110);
   border          : em(1) solid $primary-light-color;
   background-color: $white-color;
+  display         : flex;
+  flex-direction  : row;
+  flex-wrap       : nowrap;
+  justify-content : center;
+  align-content   : center;
+  align-items     : center;
 }
 
 .job-image {
   width           : rem(110);
-  height          : rem(108);
-  float           : left;
+  height          : 100;
   border-right    : em(1) solid $primary-light-color;
   background-color: $map-border-color !important;
+  order           : 0;
+  flex            : 0 1 auto;
+  align-self      : stretch;
 }
 
 .job-content {
-  width: auto;
+  padding   : 0 rem(30);
+  width     : 77%;
+  order     : 0;
+  flex      : 2 1 auto;
+  align-self: auto;
   
   h3 {
     margin        : 0;
@@ -46,6 +73,7 @@
   }
 
   p {
+    margin     : 0;
     font-size  : 1.25rem;
     line-height: 1.625;
   }

@@ -57,13 +57,15 @@ if(have_rows('location_jobs')) : ?>
         <div class="row small-up-1 medium-up-2">
           <?php while(have_rows('location_jobs')) : the_row(); ?>
           <div class="column">
-            <div class="job-item"><?php // TODO: recode this with flexbox ?>
-              <div class="job-image" style="background: url('<?php echo get_template_directory_uri(); ?>/assets/img/<?php echo $locationImage ?>') center center no-repeat"></div>
-              <div class="job-content">
-                <h3><?php the_sub_field('location_job_title'); ?></h3>
-                <p><?php echo get_the_title(); ?></p>
+            <a href="">
+              <div class="job-item"><?php // TODO: equalize the heights ?>
+                <div class="job-image" style="background: url('<?php echo get_template_directory_uri(); ?>/assets/img/<?php echo $locationImage ?>') center center no-repeat"></div>
+                <div class="job-content">
+                  <h3><?php the_sub_field('location_job_title'); ?></h3>
+                  <p><?php echo get_the_title(); ?></p>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
           <?php endwhile; ?>
         </div>

@@ -2,31 +2,17 @@
   About page
 ----------------------------------------------------------------------------*/
 .about-content {
-  :not(h2) {
+   :not(h2) {
     column-count: 2;
-  }
-}
-
-.staff {
-  padding         : rem(75) 0;
-  background-color: $alternate-color;
-
-  h2 {
-    text-align: center;
-    color     : $white-color;
-  }
-
-  .column {
-    padding-bottom: rem(40);
   }
 }
 
 // In the community
 .community {
-  max-width: 100%;
-  height: rem(500);
+  max-width      : 100%;
+  height         : rem(500);
   background-size: cover !important;
-
+  
   h2 {
     color: $alternate-color;
   }
