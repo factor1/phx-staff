@@ -2,8 +2,12 @@
  /**
   * The template file for displaying the staff grid.
   *
-  * This template file displays staff from ALL locations
+  * This template file displays staff for one specific location.
+  * Use this file with the location.php part.
   */
+
+ // grab the slug of the current page
+ $slug = get_queried_object()->post_name;
  ?>
 
 
@@ -21,6 +25,7 @@
             'meta_key'         => 'last_name',
             'orderby'          => 'meta_value',
             'order'            => 'ASC',
+            'f1_staffgrid_tax' => $slug // display the staff for the current location
           );
 
         $staffgrid = get_posts($args);

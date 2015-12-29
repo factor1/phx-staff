@@ -1447,6 +1447,59 @@
             "maxlength": "",
             "readonly": 0,
             "disabled": 0
+        },
+        {
+            "key": "field_5682cba135eab",
+            "label": "Call to Action",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5682cbb335eac",
+            "label": "Title",
+            "name": "cta_title",
+            "type": "text",
+            "instructions": "A short title for the Call to Action",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Join our LinkedIN Network",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_5682cccb35ead",
+            "label": "URL",
+            "name": "cta_url",
+            "type": "url",
+            "instructions": "Enter the URL for the LinkedIN profile",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
         }
     ],
     "location": [
@@ -1466,5 +1519,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1451326106
+    "modified": 1451412735
 }

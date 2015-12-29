@@ -1,0 +1,52 @@
+/*----------------------------------------------------------------------------
+  Locations
+----------------------------------------------------------------------------*/
+.location {
+  a {
+    display   : block;
+    margin    : 0 auto rem(20);
+    max-width : 65%;
+    text-align: center;
+  }
+}
+
+// featured jobs
+.featured-jobs {
+  padding         : rem(75) 0;
+  background-color: $gray-color;
+  
+  h2 {
+    margin    : 0 0 rem(40);
+    text-align: center;
+  }
+}
+
+.job-item {
+  margin          : 0 0 rem(30);
+  height          : rem(110);
+  clear           : both;
+  border          : em(1) solid $primary-light-color;
+  background-color: $white-color;
+}
+
+.job-image {
+  width           : rem(110);
+  height          : rem(108);
+  float           : left;
+  border-right    : em(1) solid $primary-light-color;
+  background-color: $map-border-color !important;
+}
+
+.job-content {
+  width: auto;
+  
+  h3 {
+    margin        : 0;
+    text-transform: none;
+  }
+
+  p {
+    font-size  : 1.25rem;
+    line-height: 1.625;
+  }
+}
