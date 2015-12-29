@@ -51,8 +51,9 @@
 }
 
 .job-image {
-  width           : rem(110);
-  height          : 100;
+  width           : auto;
+  min-width       : rem(110);
+  height          : auto;
   border-right    : em(1) solid $primary-light-color;
   background-color: $map-border-color !important;
   order           : 0;
@@ -62,9 +63,10 @@
 
 .job-content {
   padding   : 0 rem(30);
-  width     : 77%;
+  width     : 80%;
+  height    : auto;
   order     : 0;
-  flex      : 2 1 auto;
+  flex      : 0 1 auto;
   align-self: auto;
   
   h3 {
