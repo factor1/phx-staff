@@ -8,5 +8,6 @@ jQuery(document).ready(function($) {
 
   // Equalize elements
   $('.job-item').matchHeight();
+  $('.value-item').matchHeight();
 
 });

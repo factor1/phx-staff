@@ -47,4 +47,11 @@
 // Hero - homepage
 .hero-homepage {
   @extend .hero;
+  padding: em(140) 0;
+  
+  h2,
+  p {
+    color : $white-color;
+    margin: 0 0 rem(20);
+  }
 }

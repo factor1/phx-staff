@@ -23,7 +23,7 @@
             "label": "Title",
             "name": "hero_title",
             "type": "text",
-            "instructions": "Enter a title for the hero",
+            "instructions": "Enter a title for the hero (75 character limit)",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -35,7 +35,7 @@
             "placeholder": "",
             "prepend": "",
             "append": "",
-            "maxlength": "",
+            "maxlength": 75,
             "readonly": 0,
             "disabled": 0
         },
@@ -44,7 +44,7 @@
             "label": "Content",
             "name": "hero_content",
             "type": "textarea",
-            "instructions": "Enter the hero content",
+            "instructions": "Enter the hero content (125 character limit)",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -54,7 +54,7 @@
             },
             "default_value": "",
             "placeholder": "",
-            "maxlength": "",
+            "maxlength": 125,
             "rows": 2,
             "new_lines": "",
             "readonly": 0,
@@ -223,7 +223,7 @@
             "key": "field_56831844d6a52",
             "label": "Content",
             "name": "home_cta_content",
-            "type": "wysiwyg",
+            "type": "textarea",
             "instructions": "Call to Action content. Keep it short and sweet.",
             "required": 0,
             "conditional_logic": 0,
@@ -233,9 +233,12 @@
                 "id": ""
             },
             "default_value": "",
-            "tabs": "all",
-            "toolbar": "basic",
-            "media_upload": 1
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "",
+            "readonly": 0,
+            "disabled": 0
         },
         {
             "key": "field_5683187ed6a53",
@@ -352,6 +355,30 @@
             "disabled": 0
         },
         {
+            "key": "field_5684198b08cc3",
+            "label": "Background",
+            "name": "home_cta_background",
+            "type": "image",
+            "instructions": "Upload a background image",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": 1000,
+            "min_height": 500,
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
             "key": "field_568319abd6a58",
             "label": "Values",
             "name": "",
@@ -411,7 +438,7 @@
                     "key": "field_56831a1a6e213",
                     "label": "Content",
                     "name": "value_content",
-                    "type": "wysiwyg",
+                    "type": "textarea",
                     "instructions": "Describe this value",
                     "required": 0,
                     "conditional_logic": 0,
@@ -421,9 +448,12 @@
                         "id": ""
                     },
                     "default_value": "",
-                    "tabs": "all",
-                    "toolbar": "basic",
-                    "media_upload": 0
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": "",
+                    "new_lines": "",
+                    "readonly": 0,
+                    "disabled": 0
                 },
                 {
                     "key": "field_56831a3b6e214",
@@ -537,5 +567,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1451433931
+    "modified": 1451498274
 }
