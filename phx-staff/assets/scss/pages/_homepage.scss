@@ -3,7 +3,21 @@
 ----------------------------------------------------------------------------*/
 // Careers section
 .careers {
-  
+  div div {
+    padding: rem(85) 0;
+    
+    &:nth-child(1) {
+      background-color: $alternate-color;
+    }
+
+    &:nth-child(2) {
+      background-color: $primary-light-color;
+    }
+  }
+}
+
+.career-search {
+  background-color: transparent;
 }
 
 // Partners section

@@ -9,5 +9,6 @@ jQuery(document).ready(function($) {
   // Equalize elements
   $('.job-item').matchHeight();
   $('.value-item').matchHeight();
+  $('.career-search').matchHeight();
 
 });

@@ -8,7 +8,14 @@ get_template_part('parts/hero', 'homepage'); ?>
 
 
   <section class="careers"><!-- Career Search -->
-
+    <div class="expanded row">
+      <div class="medium-6 columns">
+        <!-- custom navigation -->
+      </div>
+      <div class="medium-6 columns">
+        <!-- custom navigation -->
+      </div>
+    </div>
   </section>
 
 
