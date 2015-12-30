@@ -4,7 +4,7 @@
  */
 
 get_header();
-get_template_part('parts/hero'); ?>
+get_template_part('parts/hero', 'homepage'); ?>
 
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>

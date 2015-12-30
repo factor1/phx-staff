@@ -1,6 +1,6 @@
 {
     "key": "group_5681cccc08c66",
-    "title": "In the Community",
+    "title": "About Us Content",
     "fields": [
         {
             "key": "field_5681cce6531b6",
@@ -87,7 +87,7 @@
             {
                 "param": "page_template",
                 "operator": "==",
-                "value": "page-templates\/page-about.php"
+                "value": "default"
             }
         ]
     ],
@@ -99,5 +99,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1451404926
+    "modified": 1451431123
 }
