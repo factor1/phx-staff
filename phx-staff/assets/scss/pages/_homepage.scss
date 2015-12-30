@@ -8,7 +8,37 @@
 
 // Partners section
 .partners {
+  padding   : rem(90) 0;
+  text-align: center;
   
+  h2 {
+    margin : 0;
+    padding: 0;
+  }
+}
+
+.partner-items {
+  margin: rem(40) 0 0;
+  
+  a {
+    display        : inline-block;
+    padding        : 0 rem(5);
+    width          : rem(100);
+    height         : rem(100);
+    text-decoration: none;
+    
+    img {
+      max-width: 100%;
+      height   : auto;
+      filter:grayscale(1); // will likely need a fallback for IE
+    }
+
+    &:hover {
+      img {
+        filter:none;
+      }
+    }
+  }
 }
 
 // Call to Action section

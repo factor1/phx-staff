@@ -10,18 +10,20 @@ get_template_part('parts/hero', 'homepage'); ?>
   <section class="careers"><!-- Career Search -->
 
   </section>
-  
+
 
   <?php if (have_rows('value')) : ?><!-- Partners -->
   <section class="partners">
     <div class="row">
       <div class="medium-10 medium-centered columns">
         <h2><?php the_field( 'partner_title' ); ?></h2>
-        <?php while (have_rows('value')) : the_row(); ?>
-        <a href="<?php the_sub_field( 'partner_link' ); ?>">
-          <img src="<?php the_sub_field( 'partner_image' ); ?>" alt="<?php the_sub_field( 'partner_name' ); ?>">
-        </a>
-        <?php endwhile; ?>
+        <div class="partner-items">
+          <?php while (have_rows('partner')) : the_row(); ?>
+          <a href="<?php the_sub_field( 'partner_link' ); ?>">
+            <img src="<?php the_sub_field( 'partner_logo' ); ?>" alt="<?php the_sub_field( 'partner_name' ); ?>">
+          </a>
+          <?php endwhile; ?>
+        </div>
       </div>
     </div>
   </section>
