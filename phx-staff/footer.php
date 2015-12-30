@@ -36,7 +36,7 @@
         <div class="small-12 large-6 columns text-center">
           <?php if( have_rows('social_profiles', 'option') ): ?>
             <span class="social">
-              Let&rsquo;s Connect:
+              Let's Connect:
               <?php while ( have_rows('social_profiles', 'option') ) : the_row(); ?>
                 <a href="<?php the_sub_field('social_url'); ?>"><?php the_sub_field('social_icon'); ?></a>
               <?php endwhile; ?>

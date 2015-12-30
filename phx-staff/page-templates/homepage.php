@@ -19,11 +19,15 @@ get_template_part('parts/hero', 'homepage'); ?>
   </section>
 
 
-  <?php if (have_rows('value')) : ?><!-- Partners -->
+  <?php if (have_rows('partner')) : ?><!-- Partners -->
   <section class="partners">
     <div class="row">
       <div class="medium-10 medium-centered columns">
-        <h2><?php the_field( 'partner_title' ); ?></h2>
+        <div class="row">
+          <div class="medium-7 medium-centered columns">
+            <h2><?php the_field( 'partner_title' ); ?></h2>
+          </div>
+        </div>
         <div class="partner-items">
           <?php while (have_rows('partner')) : the_row(); ?>
           <a href="<?php the_sub_field( 'partner_link' ); ?>">
@@ -50,6 +54,9 @@ get_template_part('parts/hero', 'homepage'); ?>
       </div>
     </div>
   </section>
+
+
+  <?php get_template_part('parts/linkedin'); ?>
 
 
   <?php if (have_rows('value')) : ?><!-- Values -->
