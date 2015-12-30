@@ -1,3 +1,0 @@
-<a href="http://foundation.zurb.com/sites/docs/v/5.5.3/components/block_grid.html" target="_blank">Block grids</a> give you a way to evenly split contents of a list within the grid. If you wanted to create a row of five images or paragraphs that need to stay evenly spaced no matter the screen size, the block grid is for you.
-<br><br>
-NOTE: Be sure that your content wrapped in the block grid is a list item

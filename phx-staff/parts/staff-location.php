@@ -6,8 +6,7 @@
   * Use this file with the location.php part.
   */
 
- // grab the slug of the current page
- $slug = get_queried_object()->post_name;
+ $slug = get_queried_object()->post_name; // grab the slug of the current page
  ?>
 
 

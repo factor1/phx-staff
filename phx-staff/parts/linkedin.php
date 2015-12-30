@@ -2,7 +2,6 @@
 /**
  * The template file for displaying the LinkedIN call to action
  */
-
  ?>
 
   <div class="linkedin-cta">

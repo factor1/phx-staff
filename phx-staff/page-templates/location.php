@@ -75,7 +75,7 @@ if(have_rows('location_jobs')) : ?>
 
 <?php endif; ?>
 
-  <!-- The rest is API and James will handle -->
+<!-- The rest is API and James will handle -->
 
 
 <?php

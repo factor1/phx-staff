@@ -22,8 +22,8 @@ get_template_part('parts/hero'); ?>
     </div>
   </section>
 
-  <section class="offices"><!-- TODO: solve for having more than one Google Map on the page at a time -->
-    <div class="row">
+  <section class="offices"><!-- TODO: solve for having more than one Google Map on the page at a time  -->
+    <div class="row"><!-- TODO: use a loop/repeater? -->
       <div class="medium-10 medium-centered columns">
         <div class="row">
           <div class="medium-4 columns"><!-- Phoenix Office -->

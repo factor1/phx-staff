@@ -2,7 +2,6 @@
 /**
  * Template file for displaying the navigation between paginated blog posts
  */
-
 ?>
 
 <div class="navigation">
