@@ -50,7 +50,7 @@
 
     <section class="footer-top">
       <div class="hide-for-medium"><!-- Mobile only -->
-        <div class="row">
+        <div class="row collapse">
           <div class="small-6 columns">
             <?php if(is_active_sidebar('footer-widget')) dynamic_sidebar('footer-widget'); ?>
           </div>
@@ -58,7 +58,7 @@
             <?php if(is_active_sidebar('footer-widget-2')) dynamic_sidebar('footer-widget-2'); ?>
           </div>
         </div>
-        <div class="row">
+        <div class="row collapse">
           <div class="small-6 columns">
             <?php if(is_active_sidebar('footer-widget-3')) dynamic_sidebar('footer-widget-3'); ?>
           </div>

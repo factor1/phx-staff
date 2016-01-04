@@ -74,6 +74,10 @@
   padding         : rem(60) rem(10);
   background-color: $primary-med-color;
   color           : $white-color;
+  
+  @media screen and (max-width: rem(1000)) {
+    padding: rem(60) rem(10) rem(60) rem(20); // to even out the columns due to the collapse on mobile
+  }
 }
 
 // footer widgets
@@ -153,6 +157,11 @@
     
     &:hover {
       color: $green-color;
+    }
+
+    strong {
+      letter-spacing: -1px;
+      font-family   : Helvetica;
     }
   }
 }
