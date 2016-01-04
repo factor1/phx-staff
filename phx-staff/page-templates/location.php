@@ -21,10 +21,10 @@ get_template_part('parts/hero'); ?>
       <div class="medium-10 medium-centered columns">
       <?php if (get_field('location_file') || get_field('location_internal_link') || get_field('location_external_link')) : ?>
         <div class="row">
-          <div class="medium-7 columns">
+          <div class="large-7 columns">
             <?php the_field('location_content'); ?>
           </div>
-          <div class="medium-5 columns">
+          <div class="large-5 columns">
           <?php if(get_field('location_file')) : ?>
             <a href="<?php the_field('location_file'); ?>" target="_blank">
               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/DownloadFile.png" alt="Content download from Phoenix Staff">
@@ -58,7 +58,7 @@ if(have_rows('location_jobs')) : ?>
           <?php while(have_rows('location_jobs')) : the_row(); ?>
           <div class="column">
             <a href="">
-              <div class="job-item"><?php // TODO: equalize the heights ?>
+              <div class="job-item">
                 <div class="job-image" style="background: url('<?php echo get_template_directory_uri(); ?>/assets/img/<?php echo $locationImage ?>') center center no-repeat"></div>
                 <div class="job-content">
                   <h3><?php the_sub_field('location_job_title'); ?></h3>
