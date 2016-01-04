@@ -8,14 +8,8 @@ header {
   justify-content: flex-start;
   align-content  : stretch;
   align-items    : center;
-  height         : rem(80);
-  min-height     : rem(60);
-  max-height     : rem(115);
+  height         : rem(120);
   
-  @media screen and (min-width: rem(1000)) {
-    height: rem(115);
-  }
-
   .header-logo {
     order           : 0;
     flex            : 2 1 auto;
@@ -46,6 +40,7 @@ header {
     align-items     : center;
     height          : 100%;
     background-color: $alternate-color;
+    min-width       : 30%;
     
     @media screen and (min-width: rem(1000)) {
       flex: 2 1 auto;
@@ -59,7 +54,7 @@ header {
   height         : rem(70);
   font-size      : 1rem;
   line-height    : normal;
-  margin         : 0 auto;
+  margin         : rem(10) auto;
   
   a {
     display: block;

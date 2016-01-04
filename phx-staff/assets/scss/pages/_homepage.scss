@@ -22,9 +22,13 @@
 
 // Partners section
 .partners {
-  padding   : rem(90) 0;
+  padding   : rem(40) 0;
   text-align: center;
   
+  @media screen and (min-width: rem(1000)) {
+    padding: rem(90) 0;
+  }
+
   h2 {
     margin : 0;
     padding: 0;
@@ -36,6 +40,7 @@
   
   a {
     display        : inline-block;
+    margin         : 0 rem(5) rem(15);
     padding        : 0 rem(5);
     width          : rem(100);
     height         : rem(100);
@@ -57,11 +62,16 @@
 
 // Call to Action section
 .cta {
-  padding        : rem(140) 0;
+  padding        : 0;
   max-width      : 100%;
-  height         : rem(650);
+  min-height     : rem(500); // changed from height: rem(650)
+  max-height     : rem(1150);
   background-size: cover !important;
   
+  @media screen and (min-width: rem(1000)) {
+    padding: rem(140) 0;
+  }
+
   h2 {
     margin: 0 0 rem(20);
   }
@@ -82,14 +92,52 @@
   }
 }
 
+.cta-image {
+  position       : relative;
+  max-width      : 100%;
+  min-height     : rem(500); // changed from height: rem(650)
+  max-height     : rem(650);
+  background-size: cover !important;
+  
+  &::before {
+    content         : '';
+    position        : absolute;
+    top             : 0;
+    right           : 0;
+    bottom          : 0;
+    left            : 0;
+    background-image: linear-gradient(to bottom, rgba(255,255,255, 0) 20%, rgba(255,255,255, 1));
+  }
+}
+
+.cta-content {
+  padding   : 0 rem(20) rem(100);
+  text-align: center;
+  
+  h2 {
+    line-height: 2rem;
+    text-align : justify;
+  }
+
+  p {
+    font-size : rem(22);
+    text-align: left;
+  }
+
+  a {
+    padding  : rem(15) rem(25);
+    font-size: 1.5em;
+  }
+}
+
 // Values section
 .values {
   div div {
-    padding   : rem(60) rem(10); // padding on the children so the background is not affected
+    padding   : rem(60) rem(40); // padding on the children so the background is not affected
     text-align: center;
     
     @media screen and (min-width: rem(1000)) {
-      padding: rem(60) rem(50);
+      padding: rem(60) rem(30);
     }
 
     &:nth-child(1),
@@ -110,7 +158,7 @@
 // Connect section
 .connect {
   text-align      : center;
-  padding         : rem(60) 0;
+  padding         : rem(60) rem(40);
   background-color: $alternate-color;
   display         : flex;
   flex-direction  : column;
@@ -121,25 +169,28 @@
   
   @media screen and (min-width: rem(1000)) {
     flex-direction: row;
+    padding       : rem(60) 0;
   }
 
   h2 {
-    display: inline;
-    margin : 0;
-    padding: 0 0 em(10);
-    color  : $white-color;
+    display  : inline;
+    margin   : 0;
+    padding  : 0 0 em(10);
+    color    : $white-color;
+    font-size: 1.75rem;
     
     @media screen and (min-width: rem(1000)) {
-      padding: 0 em(20) 0 0;
+      padding  : 0 em(20) 0 0;
+      font-size: 2.5rem;
     }
   }
 
-  a {
+  a.button.round {
     margin          : 0;
-    padding         : em(10) em(50);
+    padding         : em(10) em(40);
     background-color: $white-color;
     color           : $primary-light-color;
-    font-size       : 1.5em;
+    font-size       : 1.25em;
     
     &:hover {
       background-color: $primary-light-color;

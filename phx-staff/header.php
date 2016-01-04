@@ -37,7 +37,7 @@
 
     <div class="header-menu">
       <div class="mobile-menu hide-for-large"><!-- Mobile menu -->
-        <?php wp_nav_menu( array('theme_location' => 'primary', 'container' => 'nav')); ?>
+        <?php //wp_nav_menu( array('theme_location' => 'primary', 'container' => 'nav')); ?>
       </div>
       <div class="desktop-menu show-for-large"><!-- Desktop menu -->
         <?php wp_nav_menu( array('theme_location' => 'primary', 'container' => 'nav')); ?>

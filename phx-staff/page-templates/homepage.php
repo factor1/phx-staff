@@ -40,8 +40,21 @@ get_template_part('parts/hero', 'homepage'); ?>
   </section>
   <?php endif; ?>
 
+  <section class="cta hide-for-large"><!-- Mobile CTA -->
+    <div class="cta-image" style="background: url('<?php the_field('home_cta_background'); ?>') center center no-repeat"></div>
+    <div class="cta-content">
+      <h2><?php the_field( 'home_cta_title' ); ?></h2>
+      <p><?php the_field( 'home_cta_content' ); ?></p>
+      <?php if(get_field('home_cta_internal_link')) : ?>
+      <a class="button round" href="<?php the_field('home_cta_internal_link'); ?>"><?php the_field('home_cta_link_text'); ?></a>
+      <?php elseif(get_field('home_cta_external_link')) : ?>
+      <a class="button round" href="<?php the_field('home_cta_external_link'); ?>"><?php the_field('home_cta_link_text'); ?></a>
+      <?php endif; ?>
+    </div>
+  </section>
 
-  <section class="cta" style="background: url('<?php the_field('home_cta_background'); ?>') center center no-repeat"><!-- CTA -->
+
+  <section class="cta show-for-large" style="background: url('<?php the_field('home_cta_background'); ?>') center center no-repeat"><!-- Desktop CTA -->
     <div class="row">
       <div class="medium-6 medium-offset-6 columns">
         <h2><?php the_field( 'home_cta_title' ); ?></h2>
@@ -63,7 +76,7 @@ get_template_part('parts/hero', 'homepage'); ?>
   <section class="values">
     <div class="row expanded">
       <?php while (have_rows('value')) : the_row(); ?>
-      <div class="medium-4 columns value-item">
+      <div class="large-4 columns value-item">
         <img src="<?php the_sub_field( 'value_image' );?>" alt="">
         <h2><?php the_sub_field( 'value_title' ); ?></h2>
         <p class="featured"><?php the_sub_field( 'value_content' ); ?></p>
