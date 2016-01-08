@@ -31,24 +31,24 @@
       }
     }
   }
+}
 
-  // Without featured image
-  .banner {
-    background-color: $primary-med-color;
-    
-    .page-title {
-      h1 {
-        margin        : 0;
-        padding       : rem(40) 0;
-        line-height   : normal;
-        color         : $white-color;
-        font-size     : rem(80);
-        text-transform: uppercase;
-        text-align    : center;
-        
-        @media screen and (min-width: rem(1000)) {
-          font-size: rem(64);
-        }
+// Without featured image
+.banner {
+  background-color: $primary-med-color;
+  
+  .page-title {
+    h1 {
+      margin        : 0;
+      padding       : rem(40) 0;
+      line-height   : normal;
+      color         : $white-color;
+      font-size     : rem(80);
+      text-transform: uppercase;
+      text-align    : center;
+      
+      @media screen and (min-width: rem(1000)) {
+        font-size: rem(64);
       }
     }
   }
