@@ -9,7 +9,7 @@ function f1_login_logo()
     .login h1 a {
       width: 100% !important;
       height: 100% !important;
-    	background-image: url( '.get_template_directory_uri().'/images/factor1.png ) !important;
+    	background-image: url( '.get_template_directory_uri().'/assets/img/login.png ) !important;
       background-position: center !important;
       background-size: 100% !important;
       margin-bottom: 0.625rem !important;

@@ -16,20 +16,12 @@
         <div class="small-12 large-6 columns text-center">
           <span class="email">
             <i class="fa fa-envelope"></i>
-            <?php if( get_field( 'email', 'option' ) ) : ?>
-              <a href="mailto:<?php the_field( 'email', 'option' ); ?>"><?php the_field( 'email', 'option' ); ?></a>
-            <?php else : ?>
               <a href="mailto:info@phoenixstaff.com">info@phoenixstaff.com</a>
-            <?php endif; ?>
           </span>
 
           <span class="fax">
             <i class="fa fa-fax"></i>
-            <?php if( get_field( 'fax', 'option' ) ) : ?>
-              <a href="fax:<?php the_field( 'fax', 'option' ); ?>"><?php the_field( 'fax', 'option' ); ?></a>
-            <?php else : ?>
               <a href="fax:602.254.6363">602.254.6363</a>
-            <?php endif; ?>
           </span>
         </div>
 
