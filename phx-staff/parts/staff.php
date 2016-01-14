@@ -10,7 +10,7 @@
   <section class="staff">
     <div class="row">
       <div class="medium-10 medium-centered columns">
-        <h2>Our Team.</h2>
+        <h2>Meet the Phoenix Staff team</h2>
 
         <div class="row small-up-1 medium-up-3 large-up-5">
         <?php

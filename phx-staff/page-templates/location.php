@@ -32,9 +32,9 @@ get_template_part('parts/hero'); ?>
           <?php
           endif;
           if (get_field('location_internal_link')) : ?>
-            <a class="button round" href="<?php the_field('location_internal_link'); ?>">Read More <i class="fa fa-arrow-right"></i></a>
+            <a class="button round" href="<?php the_field('location_internal_link'); ?>">Request your free report<i class="fa fa-arrow-right"></i></a>
           <?php elseif (get_field('location_external_link')) : ?>
-            <a class="button round" href="<?php the_field('location_external_link'); ?>">Read More <i class="fa fa-arrow-right"></i></a>
+            <a class="button round" href="<?php the_field('location_external_link'); ?>">Request your free report<i class="fa fa-arrow-right"></i></a>
           <?php endif; ?>
           </div>
         </div>
@@ -53,7 +53,7 @@ if(have_rows('location_jobs')) : ?>
   <section class="featured-jobs">
     <div class="row">
       <div class="medium-10 medium-centered columns">
-        <h2>Featured Jobs</h2>
+        <h2><?php the_field('jobs_headline'); ?></h2>
         <div class="row small-up-1 medium-up-2">
           <?php while(have_rows('location_jobs')) : the_row(); ?>
           <div class="column">

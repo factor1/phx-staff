@@ -5,7 +5,7 @@
 
 get_header();
 get_template_part('parts/hero', 'homepage'); ?>
-
+<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
   <section class="careers"><!-- Career Search -->
     <div class="expanded row">
@@ -89,9 +89,9 @@ get_template_part('parts/hero', 'homepage'); ?>
 
   <section class="connect"><!-- Connect CTA -->
     <h2><?php the_field('connect_title'); ?></h2>
-    <a class="button round" href="<?php the_field('connect_link'); ?>">Connect with Us</a>
+    <a class="button round" href="<?php the_field('connect_link'); ?>">Visit our blog</a>
   </section>
 
-
+<?php endwhile; endif; ?>
 <?php
 get_footer();
