@@ -2,7 +2,7 @@
 /**
  * Footer.php
  *
- * Template file closing the head of the docuement and containing the footer elements
+ * Template file closing the head of the document and containing the footer elements
  */
 
 ?>

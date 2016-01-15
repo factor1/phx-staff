@@ -1,6 +1,6 @@
 <?php
 /*-----------------------------------------------------------------------------
-  Custom Theme Whitelabeling
+  Custom Theme White Labeling
 -----------------------------------------------------------------------------*/
 // Customize the login logo
 function f1_login_logo()

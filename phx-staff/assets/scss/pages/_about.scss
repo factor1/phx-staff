@@ -2,7 +2,7 @@
   About page
 ----------------------------------------------------------------------------*/
 .about-content {
-   :not(h2) {
+  :not(h2) {
     column-count: 2;
   }
 }
@@ -12,7 +12,7 @@
   max-width      : 100%;
   height         : rem(500);
   background-size: cover !important;
-  
+
   h2 {
     color: $alternate-color;
   }

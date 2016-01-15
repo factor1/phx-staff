@@ -101,7 +101,7 @@ function f1_remove_default_page_metaboxes()
 add_action('admin_menu', 'f1_remove_default_page_metaboxes');
 
 /*
- * Stop automatically hyperlinking images to themselves
+ * Stop automatically hyper-linking images to themselves
  */
 $image_set = get_option('image_default_link_type');
 
