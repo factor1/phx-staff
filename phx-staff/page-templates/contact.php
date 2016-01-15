@@ -94,7 +94,7 @@ get_template_part('parts/hero'); ?>
                 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
                 <script>
                   function gmapsBackgroundInit(){
-                    var map;
+                    var mapLV;
                     var latlng = new google.maps.LatLng(<?php the_field('vegas_latitude', 'option'); ?>, <?php the_field('vegas_longitude', 'option'); ?>);
                     var myLatLng = new google.maps.LatLng(<?php the_field('vegas_latitude', 'option'); ?>, <?php the_field('vegas_longitude', 'option'); ?>);
                     var stylez = [
@@ -113,7 +113,7 @@ get_template_part('parts/hero'); ?>
                         mapTypeIds: []
                       }
                     };
-                    map = new google.maps.Map(document.getElementById("vegas-map"), mapOptions);
+                    mapLV = new google.maps.Map(document.getElementById("vegas-map"), mapOptions);
 
                     var styledMapOptions = {
                       name: "I + M"
@@ -128,7 +128,7 @@ get_template_part('parts/hero'); ?>
 
                     var beachMarker = new google.maps.Marker({
                       position: myLatLng,
-                      map: map,
+                      map: mapLV,
                       animation: google.maps.Animation.DROP,
                       icon: image
                     });
@@ -155,7 +155,7 @@ get_template_part('parts/hero'); ?>
                 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
                 <script>
                   function gmapsBackgroundInit(){
-                    var map;
+                    var mapTX;
                     var latlng = new google.maps.LatLng(<?php the_field('austin_latitude', 'option'); ?>, <?php the_field('austin_longitude', 'option'); ?>);
                     var myLatLng = new google.maps.LatLng(<?php the_field('austin_latitude', 'option'); ?>, <?php the_field('austin_longitude', 'option'); ?>);
                     var stylez = [
@@ -174,7 +174,7 @@ get_template_part('parts/hero'); ?>
                         mapTypeIds: []
                       }
                     };
-                    map = new google.maps.Map(document.getElementById("austin-map"), mapOptions);
+                    mapTX = new google.maps.Map(document.getElementById("austin-map"), mapOptions);
 
                     var styledMapOptions = {
                       name: "I + M"
@@ -189,7 +189,7 @@ get_template_part('parts/hero'); ?>
 
                     var beachMarker = new google.maps.Marker({
                       position: myLatLng,
-                      map: map,
+                      map: mapTX,
                       animation: google.maps.Animation.DROP,
                       icon: image
                     });
