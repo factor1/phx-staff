@@ -91,7 +91,6 @@ get_template_part('parts/hero'); ?>
             <div class="location-item">
               <div class="location-map">
                 <div id="vegas-map" style="width:100%; height:270px; z-index:0;"></div>
-                <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
                 <script>
                   function gmapsBackgroundInit(){
                     var map;
@@ -152,7 +151,6 @@ get_template_part('parts/hero'); ?>
             <div class="location-item">
               <div class="location-map">
                 <div id="austin-map" style="width:100%; height:270px; z-index:0;"></div>
-                <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
                 <script>
                   function gmapsBackgroundInit(){
                     var map;
