@@ -121,8 +121,8 @@ get_template_part('parts/hero'); ?>
 
                     var jayzMapType = new google.maps.StyledMapType(stylez, styledMapOptions);
 
-                    map.mapTypes.set('I + M', jayzMapType);
-                    map.setMapTypeId('I + M');
+                    mapLV.mapTypes.set('I + M', jayzMapType);
+                    mapLV.setMapTypeId('I + M');
 
                     var image = '<?php echo get_template_directory_uri(); ?>/assets/img/LocationPin.png';
 
@@ -182,8 +182,8 @@ get_template_part('parts/hero'); ?>
 
                     var jayzMapType = new google.maps.StyledMapType(stylez, styledMapOptions);
 
-                    map.mapTypes.set('I + M', jayzMapType);
-                    map.setMapTypeId('I + M');
+                    mapTX.mapTypes.set('I + M', jayzMapType);
+                    mapTX.setMapTypeId('I + M');
 
                     var image = '<?php echo get_template_directory_uri(); ?>/assets/img/LocationPin.png';
 
