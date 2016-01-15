@@ -96,3 +96,49 @@
     z-index: 1;
   }
 }
+
+/**
+* Mobile nav
+*/
+
+.nifty-panel {
+  .menu {
+    text-align: center;
+
+    li {
+      display: block;
+      position: relative;
+
+      a {
+        padding: 2rem !important;
+        height: 1.5rem;
+      }
+    }
+
+    li.menu-item-has-children {
+      a {
+        &::after {
+          content: '\f105';
+          font-family: 'fontAwesome';
+          font-size: em(18);
+          padding-left: em(10);
+          color: $green-color;
+        }
+      }
+
+      &:hover {
+        .sub-menu {
+          display: none !important;
+        }
+      }
+    }
+  }
+
+  .sub-menu {
+  // TODO: it might be better to create a separate mobile menu, and give it a unique class or ID
+  }
+}
+
+.expand {
+  display: block;
+}

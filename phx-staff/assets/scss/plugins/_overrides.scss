@@ -171,9 +171,9 @@ textarea {
  */
 
 .nifty-panel {
-  nav {
-    display: none;
-  }
+  position: relative;
+  top: 100%;
+  background: $primary-light-color;
 }
 
 .toggle-text {

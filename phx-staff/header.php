@@ -37,21 +37,19 @@
 
     <div class="header-menu">
       <div class="mobile-menu hide-for-large"><!-- Mobile menu -->
-          <span class="toggle-text"><!-- Mobile Hamburger -->
-            Menu
-          </span>
-          <a id="nifty-nav-toggle" class="mm_open"><span></span></a>
+        <span class="toggle-text"><!-- Mobile Hamburger -->
+          Menu
+        </span>
+        <a id="nifty-nav-toggle" class="mm_open"><span></span></a>
       </div>
       <div class="desktop-menu show-for-large"><!-- Desktop menu -->
         <?php wp_nav_menu( array('theme_location' => 'primary', 'container' => 'nav')); ?>
       </div>
     </div>
-
-    <div class="nifty-panel"><!-- Mobile Navigation Panel -->
-      <div>
-        <?php wp_nav_menu( array('theme_location' => 'primary', 'container' => 'nav', 'depth' => 2) ); ?>
-      </div>
-    </div>
   </header><!-- Close Header -->
+  
+  <div class="nifty-panel"><!-- Mobile Navigation Panel -->
+    <?php wp_nav_menu( array('theme_location' => 'primary', 'container' => 'nav', 'depth' => 2) ); ?>
+  </div>
 
   <main><!-- Main -->

@@ -10,6 +10,10 @@ header {
   align-items    : center;
   height         : rem(120);
   
+  // for Nifty Nav
+  z-index         : 9999;
+  position        : relative;
+
   .header-logo {
     order           : 0;
     flex            : 2 1 auto;
@@ -22,7 +26,7 @@ header {
     align-items     : center;
     height          : 100%;
     background-color: #fff;
-    
+
     @media screen and (min-width: rem(1000)) {
       flex: 1 2 auto;
     }
@@ -41,7 +45,7 @@ header {
     height          : 100%;
     background-color: $alternate-color;
     min-width       : 30%;
-    
+
     @media screen and (min-width: rem(1000)) {
       flex: 2 1 auto;
     }
@@ -55,7 +59,7 @@ header {
   font-size      : 1rem;
   line-height    : normal;
   margin         : rem(10) auto;
-  
+
   a {
     display: block;
     width  : 100%;
