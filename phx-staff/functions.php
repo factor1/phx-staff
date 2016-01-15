@@ -32,7 +32,7 @@ if (!function_exists('f1_features')) {
 }
 
 /**
- * Link to all theme CSS files.
+ * Link to all theme CSS/JS files.
  */
 function f1_theme_scripts()
 {
@@ -42,9 +42,10 @@ function f1_theme_scripts()
   wp_enqueue_style('theme-css', get_template_directory_uri().'/assets/css/theme.min.css');
 
   // JS files
-  wp_enqueue_script('foundation-js', get_template_directory_uri().'/assets/js/vendor/foundation.min.js', array('jquery'), '', true);
-  wp_enqueue_script('match-height', get_template_directory_uri().'/assets/js/plugins/matchHeight.min.js', array('jquery'), '', true);
-  wp_enqueue_script('theme-js', get_template_directory_uri().'/assets/js/theme.min.js', array('jquery', 'foundation-js', 'match-height'), '', true);
+  wp_enqueue_script('foundation-js', get_template_directory_uri().'/assets/js/vendor/foundation.min.js', '', '', true);
+  wp_enqueue_script('match-height', get_template_directory_uri().'/assets/js/plugins/matchHeight.min.js', '', '', true);
+  wp_enqueue_script('nifty-nav', get_template_directory_uri().'/assets/js/plugins/nifty-nav.js', '', '', true);
+  wp_enqueue_script('theme-js', get_template_directory_uri().'/assets/js/theme.min.js', array('foundation-js', 'match-height'), '', true);
 }
 add_action('wp_enqueue_scripts', 'f1_theme_scripts');
 

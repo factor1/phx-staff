@@ -1,0 +1,101 @@
+////////////////////////////////////////////////////////////////////////
+///////////------Factor1 Nav------//////////////////////////////////////
+// a jquery tool by Eric Stout (@buschschwick) and Matt Adams (@mattada)
+// version 1.4 ////////////////////////////////////////////////////////
+// http://factor1studios.com  ////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////
+
+.nifty-panel {
+  position          : absolute;
+  width             : 100%;
+  /*you could have different widths if you want, but 100% is most common*/
+  border            : 0;
+  padding           : 0;
+  background        : rgb(229, 229, 229);
+  color             : white;
+  top               : 80px;
+  display           : none;
+  z-index           : 9999;
+  overflow          : scroll;
+  margin-bottom     : 0;
+  padding-bottom    : 0;
+  -ms-overflow-style: none;
+  /* hides the scrollbars for Internet Explorer on the nifty-panel */
+}
+
+
+.mask {
+  background: rgba(0,0,0,0.62);
+  height    : 100%;
+  width     : 100%;
+  z-index   : 9998;
+  position  : fixed;
+  top       : 0;
+  opacity   : 0;
+}
+
+//animated hamburger styles
+#nifty-nav-toggle {
+  width     : 30px;
+  height    : 40px;
+  display   : block;
+  background: none;
+  position  : absolute;
+  top       : 2px;
+  right     : 0;
+  transition: all 0.3s ease;
+}
+
+#nifty-nav-toggle span,
+#nifty-nav-toggle span:before,
+#nifty-nav-toggle span:after {
+  cursor       : pointer;
+  border-radius: 1px;
+  height       : 3px;
+  width        : 30px;
+  background   : rgb(171,171,171);
+  position     : absolute;
+  top          : 21px;
+  right        : 0;
+  display      : block;
+  content      : "";
+}
+
+#nifty-nav-toggle span:before {
+  top: -8px;
+}
+
+#nifty-nav-toggle span:after {
+  bottom: -8px;
+  top   : 8px;
+}
+
+#nifty-nav-toggle span,
+#nifty-nav-toggle span:before,
+#nifty-nav-toggle span:after {
+  transition: all 500ms ease-in-out;
+}
+
+
+#nifty-nav-toggle.active span {
+  background-color: transparent;
+}
+
+#nifty-nav-toggle.active span:before,
+#nifty-nav-toggle.active span:after {
+  top: 0;
+}
+
+#nifty-nav-toggle.active span:before {
+  transform        : rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+#nifty-nav-toggle.active span:after {
+  transform        : rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+#nifty-nav-toggle:hover {
+  opacity: 0.5;
+}

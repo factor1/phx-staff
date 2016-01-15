@@ -4,10 +4,10 @@
 .desktop-menu {
   position: relative;
   left    : 10%;
-  
+
   li {
     height: rem(120); // set as the same height as the header due to flexbox and to avoid centering with margins
-    
+
     &:hover {
       background-color: $primary-light-color;
     }
@@ -16,14 +16,14 @@
 
 .menu {
   li {
-    
+
     // style the LinkedIn nav item
     a[href*='linkedin.com'] {
       background         : url('../img/LinkedIn-Nav.png');
       background-repeat  : no-repeat;
       background-position: center center;
       color              : transparent;
-      
+
       &:hover {
         color: transparent;
       }
@@ -40,7 +40,7 @@
     text-transform : uppercase;
     color          : $white-color;
     text-decoration: none;
-    
+
     &:hover {
       color: $green-color;
     }
@@ -57,7 +57,7 @@
   width           : rem(250);
   text-align      : center;
   background-color: $primary-light-color;
-  
+
   // add the caret before the dropdown
   &::before {
     padding    : rem(10);
@@ -73,7 +73,7 @@
     padding   : rem(5);
     list-style: none;
     height    : auto; // return the li height to a normal state
-    
+
     &:hover {
       background-color: $primary-med-color;
     }

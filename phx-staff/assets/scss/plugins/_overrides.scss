@@ -48,10 +48,10 @@ textarea {
   text-align     : center;
   text-decoration: none;
   color          : $white-color;
-  
+
   &:hover {
     color: $primary-light-color;
-    
+
     .f1_mentor_photo_container img:nth-child(2) {
       display: block;
     }
@@ -64,7 +64,7 @@ textarea {
   overflow: hidden;
   width   : rem(100);
   height  : rem(100);
-  
+
   img {
     width        : rem(100);
     height       : rem(100);
@@ -110,7 +110,7 @@ textarea {
 .remodal-close {
   top : em(15);
   left: 90%;
-  
+
   &::after {
     content    : '\f057';
     font-family: 'FontAwesome' !important;
@@ -136,7 +136,7 @@ textarea {
 .f1_mentor_details_photo_container {
   margin-bottom: em(20);
   text-align   : center;
-  
+
   img {
     width        : rem(100);
     height       : rem(100);
@@ -164,4 +164,33 @@ textarea {
     padding  : em(20) em(5);
     font-size: 1.5em;
   }
+}
+
+/**
+ * Nifty Nav
+ */
+
+.nifty-panel {
+  nav {
+    display: none;
+  }
+}
+
+.toggle-text {
+  color: $white-color;
+  text-transform: uppercase;
+  position: absolute;
+  top: 45px;
+  right: 75px;
+}
+
+#nifty-nav-toggle {
+  top: 35px;
+  right: 35px;
+}
+
+#nifty-nav-toggle span,
+#nifty-nav-toggle span:before,
+#nifty-nav-toggle span:after {
+  background: $white-color;
 }
