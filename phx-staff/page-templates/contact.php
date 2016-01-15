@@ -33,7 +33,7 @@ get_template_part('parts/hero'); ?>
                 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
                 <script>
                   function gmapsBackgroundInit(){
-                    var map;
+                    var mapPHX;
                     var latlng = new google.maps.LatLng(<?php the_field('latitude', 'option'); ?>, <?php the_field('longitude', 'option'); ?>);
                     var myLatLng = new google.maps.LatLng(<?php the_field('latitude', 'option'); ?>, <?php the_field('longitude', 'option'); ?>);
                     var stylez = [
@@ -52,7 +52,7 @@ get_template_part('parts/hero'); ?>
                         mapTypeIds: []
                       }
                     };
-                    map = new google.maps.Map(document.getElementById("phoenix-map"), mapOptions);
+                    mapPHX = new google.maps.Map(document.getElementById("phoenix-map"), mapOptions);
 
                     var styledMapOptions = {
                       name: "I + M"
@@ -60,14 +60,14 @@ get_template_part('parts/hero'); ?>
 
                     var jayzMapType = new google.maps.StyledMapType(stylez, styledMapOptions);
 
-                    map.mapTypes.set('I + M', jayzMapType);
-                    map.setMapTypeId('I + M');
+                    mapPHX.mapTypes.set('I + M', jayzMapType);
+                    mapPHX.setMapTypeId('I + M');
 
                     var image = '<?php echo get_template_directory_uri(); ?>/assets/img/LocationPin.png';
 
                     var beachMarker = new google.maps.Marker({
                       position: myLatLng,
-                      map: map,
+                      map: mapPHX,
                       animation: google.maps.Animation.DROP,
                       icon: image
                     });
