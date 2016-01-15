@@ -7,4 +7,5 @@
 	<p>Please use the main navigation to find what you are looking for.</p>
 </div>
 
-<?php get_footer(); ?>
+<?php
+get_footer();

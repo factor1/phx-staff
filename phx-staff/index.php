@@ -56,7 +56,7 @@ get_header();
           </article>
         <?php endwhile; ?>
 
-        <?php get_template_part('parts/nav' ); ?>
+        <?php get_template_part('parts/nav'); ?>
 
         <?php else : ?>
           <h2>There are no posts yet, check back soon!</h2>
@@ -68,4 +68,3 @@ get_header();
 <?php
 get_sidebar();
 get_footer();
-?>
