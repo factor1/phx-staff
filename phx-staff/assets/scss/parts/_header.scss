@@ -27,10 +27,10 @@ header {
     height          : 100%;
     background-color: $alternate-color;
     width       : 100%;
-  }
-  // mobile adjustment
-  @media screen and (max-width: 40em){
-    width: 200px;
+    // mobile adjustment
+    @media screen and (max-width: 40em){
+      width: 200px;
+    }
   }
 }
 
