@@ -14,6 +14,15 @@
     align-items: center;
       li{
         flex: 0 1 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+          a{
+            padding: 0;
+            flex: 0 1 auto;
+            height: auto;
+          }
       }
   }
 
@@ -35,6 +44,7 @@
       background-repeat  : no-repeat;
       background-position: center center;
       color              : transparent;
+      min-width: 85px;
 
       &:hover {
         color: transparent;
@@ -153,4 +163,17 @@
 
 .expand {
   display: block;
+}
+
+// Desktop Menu Responsive Font Adjustments
+@media screen and (max-width: rem(1191)){
+  .desktop-menu .menu a{
+    font-size: 1.205rem;
+  }
+}
+
+@media screen and (max-width: rem(1106)){
+  .desktop-menu .menu a{
+    font-size: 1.0rem;
+  }
 }
