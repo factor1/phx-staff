@@ -147,11 +147,32 @@
           color: $green-color;
         }
       }
+      &:hover{
+        ul{
+          display: none;
+        }
+      }
+    }
+    .menu-opened:first-of-type:after{
+      content: '\f107' !important;
+    }
+    .sub-menu .menu-opened:after{
+      content: '\f105' !important;
     }
   }
 
   .sub-menu {
-  // TODO: it might be better to create a separate mobile menu, and give it a unique class or ID
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    &:before{
+      display: none;
+    }
+    li{
+      a{
+        padding: 0 15px !important;
+      }
+    }
   }
 }
 
