@@ -1,32 +1,32 @@
 // function we use to remove the mask
 var niftyRemove = function(){
-	$('.nifty-mask').remove();
+	jQuery('.nifty-mask').remove();
 };
 
 var niftyUnMaskIt = function(){
-	$('.nifty-mask').animate({opacity:0.0});
+	jQuery('.nifty-mask').animate({opacity:0.0});
 	setTimeout(niftyRemove, 800);
 };
 
 // setting up our variables for submenu toggles
-var mobileNavItem = $('.nifty-panel ul li');
+var mobileNavItem = jQuery('.nifty-panel ul li');
 var $mobileClicked;
 
 // when the document is ready lets go!
-$(document).ready(function(){
+jQuery(document).ready(function(){
 
 	i = 0;
 
 	// listen for the click on the menu icon
-	$('#nifty-nav-toggle').click(function(){
+	jQuery('#nifty-nav-toggle').click(function(){
 
 		// Add 1 to the count
 		i++;
 
-		$('#nifty-nav-toggle').toggleClass('nifty-active');
+		jQuery('#nifty-nav-toggle').toggleClass('nifty-active');
 
 		// toggle the nav up/down
-		$('.nifty-panel').slideToggle(500).css("position", "absolute");
+		jQuery('.nifty-panel').slideToggle(500).css("position", "absolute");
 
 		// Check if the counter is even or odd
 		var isEven = function(clickCounter){
@@ -36,23 +36,23 @@ $(document).ready(function(){
 		if (isEven(i) === false){
 
 			//lets create a nice mask to dim the content
-			$('body').append('<div class="nifty-mask"></div>');
-			$('.nifty-mask').animate({opacity:1.0});
+			jQuery('body').append('<div class="nifty-mask"></div>');
+			jQuery('.nifty-mask').animate({opacity:1.0});
 		} else {
 			niftyUnMaskIt();
 		}
 
 		// or alternatively you can click the mask and make that shit go away.
-		$('.nifty-mask').click(function(){
+		jQuery('.nifty-mask').click(function(){
 
 			//slide up the nav panel
-			$('.nifty-panel').slideUp(500);
+			jQuery('.nifty-panel').slideUp(500);
 
 			//remove the mask
 			niftyUnMaskIt();
 
 			// remove the active class on the hamburger mmmm hamburger
-			$('#nifty-nav-toggle').removeClass('nifty-active');
+			jQuery('#nifty-nav-toggle').removeClass('nifty-active');
 
 			i++;  // Add 1 to the count
 		});
@@ -67,12 +67,12 @@ $(document).ready(function(){
 	We got you... this is usefull when your site is a single page layout
 	and you want to jump down to an anchor tag instead of a different page.
 	*/
-	$('.nifty-nav-item').click(function(){
+	jQuery('.nifty-nav-item').click(function(){
 
 		//slide up our panel
-		$('.nifty-panel').slideUp(500);
+		jQuery('.nifty-panel').slideUp(500);
 		niftyUnMaskIt();
-		$('#nifty-nav-toggle').removeClass('nifty-active');
+		jQuery('#nifty-nav-toggle').removeClass('nifty-active');
 		i = 0;  // reset the counter
 	});
 
@@ -84,7 +84,7 @@ $(document).ready(function(){
 	make sure your classes and structure matches.
 	*/
 	mobileNavItem.on('click', function(){
-		$mobileClicked = $(this);
+		$mobileClicked = jQuery(this);
 		$mobileClicked.find('.sub-menu').slideToggle();
 		$mobileClicked.find('a').toggleClass('menu-opened');
 	});
