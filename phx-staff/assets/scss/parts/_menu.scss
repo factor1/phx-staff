@@ -166,6 +166,11 @@
 }
 
 // Desktop Menu Responsive Font Adjustments
+@media screen and (min-width: rem(1220)){
+  .desktop-menu .menu{
+    padding-right: 20px;
+  }
+}
 @media screen and (max-width: rem(1191)){
   .desktop-menu .menu a{
     font-size: 1.205rem;
