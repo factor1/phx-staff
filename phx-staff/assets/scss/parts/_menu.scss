@@ -177,3 +177,10 @@
     font-size: 1.0rem;
   }
 }
+
+// Mobile Logo Adjustment
+@media screen and (max-width: 40em){
+  .logo{
+    margin: 0 15px;
+  }
+}
