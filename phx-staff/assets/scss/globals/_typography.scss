@@ -62,8 +62,15 @@ a {
   line-height    : $body-line-height;
   text-decoration: underline;
   color          : $primary-light-color;
-  
+
   &:hover {
     color: $green-color;
+  }
+}
+
+// Mobile Typography Styles
+@media screen and (max-width: 40em){
+  .banner .page-title h1{
+    font-size: 2rem;
   }
 }
