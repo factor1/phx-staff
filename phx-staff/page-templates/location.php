@@ -44,6 +44,12 @@ get_template_part('parts/hero'); ?>
       </div>
     </div>
   </section>
+  
+      <div class="row">
+    	<div class="medium-10 medium-centered columns">
+    	<?php the_content(); ?>
+    	</div>
+    </div>
 
 <?php
 get_template_part('parts/staff', 'location');
