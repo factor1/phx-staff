@@ -41,7 +41,7 @@ get_template_part('parts/hero', 'homepage'); ?>
   <?php endif; ?>
 
   <section class="cta hide-for-large"><!-- Mobile CTA -->
-    <div class="cta-image" style="background: url('<?php the_field('home_cta_background'); ?>') center center no-repeat"></div>
+    <div class="cta-image" style="background: url('<?php the_field('home_cta_background'); ?>') left center no-repeat"></div>
     <div class="cta-content">
       <h2><?php the_field( 'home_cta_title' ); ?></h2>
       <p><?php the_field( 'home_cta_content' ); ?></p>
