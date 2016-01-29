@@ -85,6 +85,64 @@
             "mime_types": ""
         },
         {
+            "key": "field_56abe67c74d10",
+            "label": "Career Search",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_56abe69b74d11",
+            "label": "Find Jobs",
+            "name": "find_jobs",
+            "type": "text",
+            "instructions": "Title for the find a job area",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "I want to see open opportunities in..",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_56abe6f774d12",
+            "label": "Find Candidates",
+            "name": "find_candidates",
+            "type": "text",
+            "instructions": "Title for the find a candidate area",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "I want to see the best candidates",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
             "key": "field_56831619d6a4b",
             "label": "Partners",
             "name": "",
@@ -588,5 +646,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1451499430
+    "modified": 1454106411
 }
