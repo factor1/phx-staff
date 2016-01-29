@@ -23,21 +23,24 @@
     h2 {
       color: $white-color;
       margin: 0;
+      text-align: center;
 
       &:hover {
         cursor: pointer;
       }
 
-      &:after {
-        content: '\f107'; // angle right
-        //content: '\f105'; // angle down
-        font-family: 'fontAwesome';
-        font-size: 32px;
-        position: absolute;
-        top: rem(50);
-        right: 13%;
-        width: 10px;
-        height: 10px;
+      i {
+        padding-left: rem(15);
+      }
+
+      a {
+        margin: 0;
+        color: $white-color;
+        font-family: $header-font;
+        font-weight: $header-font-weight;
+        font-size: rem(40);
+        text-decoration: none;
+        line-height: inherit;
       }
     }
   }

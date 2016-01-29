@@ -9,7 +9,7 @@ jQuery(document).ready(function($) {
   // Equalize elements via matchHeight
   $('.job-item').matchHeight();
   $('.value-item').matchHeight();
-  $('.career-search').matchHeight();
+  $('.careers div div').matchHeight();
   $('.career-list li').matchHeight();
 
   // Nifty Nav Adjustments
