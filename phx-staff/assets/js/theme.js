@@ -16,7 +16,7 @@ jQuery(document).ready(function($) {
   $('.nifty-panel .menu li.menu-item-95 a').attr('href', '#');
 
   // Homepage Career Search
-  $('.career-search').on('click', function(){
+  $('#career-toggle').on('click', function(){
     $('.career-list').slideToggle(300);
   });
 

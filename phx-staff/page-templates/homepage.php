@@ -10,8 +10,8 @@ if (have_posts()) : while (have_posts()) : the_post(); ?>
   <section class="careers"><!-- Career Search -->
     <div class="expanded row">
       <div class="medium-6 columns">
+        <h2 id="career-toggle">I want a career in...</h2>
         <nav class="career-search">
-          <h2>I want a career in...</h2>
           <ul class="career-list">
             <li>
               <a href="<?php home_url(); ?>/open-opportunities/phoenix/">
@@ -43,8 +43,6 @@ if (have_posts()) : while (have_posts()) : the_post(); ?>
       <div class="medium-6 columns">
         <nav class="candidate-search">
           <h2>I need to see the best candidates in...</h2>
-          <ul class="career-list">
-          </ul>
       </div>
     </div>
   </section>

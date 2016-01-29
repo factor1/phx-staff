@@ -5,6 +5,12 @@
 .careers {
   div div {
     padding: 0;
+    position: relative;
+    padding: em(50) em(10);
+
+    @media screen and (min-width: rem(1000)) {
+      padding: em(50);
+    }
 
     &:nth-child(1) {
       background-color: $alternate-color;
@@ -16,47 +22,50 @@
 
     h2 {
       color: $white-color;
-      margin: 0 0 rem(10);
+      margin: 0;
 
       &:hover {
         cursor: pointer;
+      }
+
+      &:after {
+        content: '\f107'; // angle right
+        //content: '\f105'; // angle down
+        font-family: 'fontAwesome';
+        font-size: 32px;
+        position: absolute;
+        top: rem(50);
+        right: 13%;
+        width: 10px;
+        height: 10px;
       }
     }
   }
 }
 
 // Nav
-.career-search,
-.candidate-search {
-  position: relative;
+.career-search {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
   margin: 0 auto;
-  padding: em(50) em(10);
-  background-color: transparent;
+  background-color: $alternate-color;
   color: $white-color;
-
-  @media screen and (min-width: rem(1000)) {
-    padding: em(50);
-  }
-
-  &:before {
-    content: '\f107'; // angle right
-    //content: '\f105'; // angle down
-    font-family: 'fontAwesome';
-    font-size: 32px;
-    position: absolute;
-    top: rem(50);
-    right: 13%;
-    width: 10px;
-    height: 10px;
-  }
 }
 
 // List
 .career-list {
-  list-style-type: none;
   display: none;
   margin: 0;
-  padding: rem(40) 0 0;
+  padding: 0 em(10) em(10);
+  list-style-type: none;
+
+  @media screen and (min-width: rem(1000)) {
+    padding: 0 em(50) em(50);
+  }
+
 
   li {
     display: inline-block;
