@@ -2,6 +2,7 @@
 /**
  * Template Name: Locations
  */
+
 // grab the right image based on the current page
 // it is important the client doesn't have the option to change the slugs for the location pages in WP
 $currentLocation = get_queried_object()->post_name;
@@ -44,12 +45,12 @@ get_template_part('parts/hero'); ?>
       </div>
     </div>
   </section>
-  
-      <div class="row">
-    	<div class="medium-10 medium-centered columns">
+
+  <div class="row">
+  	<div class="medium-10 medium-centered columns">
     	<?php the_content(); ?>
-    	</div>
-    </div>
+  	</div>
+  </div>
 
 <?php
 get_template_part('parts/staff', 'location');
@@ -65,7 +66,7 @@ if(have_rows('location_jobs')) : ?>
           <div class="column">
             <a href="">
               <div class="job-item">
-                <div class="job-image" style="background: url('<?php echo get_template_directory_uri(); ?>/assets/img/<?php echo $locationImage ?>') center center no-repeat"></div>
+                <div class="job-image" style="background: url('<?php echo get_template_directory_uri(); ?>/assets/img/<?php echo $locationImage; ?>') center center no-repeat"></div>
                 <div class="job-content">
                   <h3><?php the_sub_field('location_job_title'); ?></h3>
                   <p><?php echo get_the_title(); ?></p>

@@ -21,7 +21,6 @@ get_template_part('parts/hero'); ?>
 get_template_part('parts/staff');
 get_template_part('parts/linkedin');
 if (get_field('community_content')) : ?>
-
   <section class="community" style="background: url('<?php the_field('community_background'); ?>') center center no-repeat">
     <div class="row">
       <div class="medium-5 medium-offset-7 columns">
@@ -30,7 +29,8 @@ if (get_field('community_content')) : ?>
       </div>
     </div>
   </section>
+<?php endif; ?>
+
 
 <?php
-endif;
 get_footer();

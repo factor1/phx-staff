@@ -6,6 +6,7 @@
 get_header();
 ?>
 
+
   <section class="banner">
     <div class="page-title">
       <h1>Blog</h1>
@@ -64,6 +65,7 @@ get_header();
       </div>
     </div>
   </section>
+
 
 <?php
 get_sidebar();
