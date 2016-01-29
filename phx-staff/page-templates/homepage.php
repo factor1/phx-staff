@@ -10,10 +10,41 @@ if (have_posts()) : while (have_posts()) : the_post(); ?>
   <section class="careers"><!-- Career Search -->
     <div class="expanded row">
       <div class="medium-6 columns">
-        <!-- custom navigation -->
+        <nav class="career-search">
+          <h2>I want a career in...</h2>
+          <ul class="career-list">
+            <li>
+              <a href="<?php home_url(); ?>/open-opportunities/phoenix/">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Arizona-Color.png">
+                <p>Phoenix, AZ</p>
+              </a>
+            </li>
+            <li>
+              <a href="<?php home_url(); ?>/open-opportunities/las-vegas/">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Texas-Color.png">
+                <p>Austin, TX</p>
+              </a>
+            </li>
+            <li>
+              <a href="<?php home_url(); ?>/open-opportunities/austin/">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Nevada-Color.png">
+                <p>Las Vegas, NV</p>
+              </a>
+            </li>
+            <li>
+              <a href="<?php home_url(); ?>/open-opportunities/">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/US-Color.png">
+                <p>All Locations</p>
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
       <div class="medium-6 columns">
-        <!-- custom navigation -->
+        <nav class="candidate-search">
+          <h2>I need to see the best candidates in...</h2>
+          <ul class="career-list">
+          </ul>
       </div>
     </div>
   </section>

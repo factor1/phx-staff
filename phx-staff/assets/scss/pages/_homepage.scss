@@ -4,8 +4,8 @@
 // Careers section
 .careers {
   div div {
-    padding: rem(85) 0;
-    
+    padding: 0;
+
     &:nth-child(1) {
       background-color: $alternate-color;
     }
@@ -13,18 +13,91 @@
     &:nth-child(2) {
       background-color: $primary-light-color;
     }
+
+    h2 {
+      color: $white-color;
+      margin: 0 0 rem(10);
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
   }
 }
 
-.career-search {
+// Nav
+.career-search,
+.candidate-search {
+  position: relative;
+  margin: 0 auto;
+  padding: em(50) em(10);
   background-color: transparent;
+  color: $white-color;
+
+  @media screen and (min-width: rem(1000)) {
+    padding: em(50);
+  }
+
+  &:before {
+    content: '\f107'; // angle right
+    //content: '\f105'; // angle down
+    font-family: 'fontAwesome';
+    font-size: 32px;
+    position: absolute;
+    top: rem(50);
+    right: 13%;
+    width: 10px;
+    height: 10px;
+  }
+}
+
+// List
+.career-list {
+  list-style-type: none;
+  display: none;
+  margin: 0;
+  padding: rem(40) 0 0;
+
+  li {
+    display: inline-block;
+    margin: 0 0 em(5);
+    width: 49%;
+    background-color: #fff;
+    padding: em(20) 0;
+  }
+
+  a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #fff;
+    filter: grayscale(100%) opacity(40%); // will likely need a fallback for IE
+
+    &:hover {
+      filter: none;
+    }
+
+    img {
+    }
+
+    p {
+      color: $green-color;
+      font-size: 1.375rem;
+      font-family: $header-font;
+      font-weight: $header-font-weight;
+      margin: 0;
+    }
+  }
 }
 
 // Partners section
 .partners {
   padding   : rem(40) 0;
   text-align: center;
-  
+
   @media screen and (min-width: rem(1000)) {
     padding: rem(90) 0;
   }
@@ -37,7 +110,7 @@
 
 .partner-items {
   margin: rem(40) 0 0;
-  
+
   a {
     display        : inline-block;
     margin         : 0 rem(5) rem(15);
@@ -45,16 +118,16 @@
     width          : rem(100);
     height         : rem(100);
     text-decoration: none;
-    
+
     img {
       max-width: 100%;
       height   : auto;
-      filter:grayscale(1); // will likely need a fallback for IE
+      filter: grayscale(100%); // will likely need a fallback for IE
     }
 
     &:hover {
       img {
-        filter:none;
+        filter: none;
       }
     }
   }
@@ -67,7 +140,7 @@
   min-height     : rem(500); // changed from height: rem(650)
   max-height     : rem(1150);
   background-size: cover !important;
-  
+
   @media screen and (min-width: rem(1000)) {
     padding: rem(140) 0;
   }
@@ -85,7 +158,7 @@
     padding         : em(10) em(50);
     font-size       : 1.5rem;
     background-color: $primary-light-color;
-    
+
     &:hover {
       background-color: $green-color;
     }
@@ -98,7 +171,7 @@
   min-height     : rem(500); // changed from height: rem(650)
   max-height     : rem(650);
   background-size: cover !important;
-  
+
   &::before {
     content         : '';
     position        : absolute;
@@ -113,7 +186,7 @@
 .cta-content {
   padding   : 0 rem(20) rem(100);
   text-align: center;
-  
+
   h2 {
     line-height: 2rem;
     text-align : justify;
@@ -135,7 +208,7 @@
   div div {
     padding   : rem(60) rem(40); // padding on the children so the background is not affected
     text-align: center;
-    
+
     @media screen and (min-width: rem(1000)) {
       padding: rem(60) rem(30);
     }
@@ -166,7 +239,7 @@
   justify-content : center;
   align-content   : center;
   align-items     : center;
-  
+
   @media screen and (min-width: rem(1000)) {
     flex-direction: row;
     padding       : rem(60) 0;
@@ -178,7 +251,7 @@
     padding  : 0 0 em(10);
     color    : $white-color;
     font-size: 1.75rem;
-    
+
     @media screen and (min-width: rem(1000)) {
       padding  : 0 em(20) 0 0;
       font-size: 2.5rem;
@@ -191,7 +264,7 @@
     background-color: $white-color;
     color           : $primary-light-color;
     font-size       : 1.25em;
-    
+
     &:hover {
       background-color: $primary-light-color;
       color           : $white-color;

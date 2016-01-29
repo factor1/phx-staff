@@ -3,7 +3,6 @@
 ----------------------------------------------------------------------------*/
 jQuery(document).ready(function($) {
 
-
   // Initialize Foundation
   $(document).foundation();
 
@@ -11,7 +10,14 @@ jQuery(document).ready(function($) {
   $('.job-item').matchHeight();
   $('.value-item').matchHeight();
   $('.career-search').matchHeight();
+  $('.career-list li').matchHeight();
 
   // Nifty Nav Adjustments
   $('.nifty-panel .menu li.menu-item-95 a').attr('href', '#');
+
+  // Homepage Career Search
+  $('.career-search').on('click', function(){
+    $('.career-list').slideToggle(300);
+  });
+
 });
