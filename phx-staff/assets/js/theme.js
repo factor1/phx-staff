@@ -1,6 +1,21 @@
 /*----------------------------------------------------------------------------
   Main JS Script(s)
 ----------------------------------------------------------------------------*/
+var $ = jQuery;
+
+var jobMarketFilter = function(){
+  if ( window.location.href.indexOf("?#wordpressdeveloper") > -1 ) {
+    $('#wordpressdeveloper').show();
+  } else if( window.location.href.indexOf("?#iosdeveloper") > -1 ){
+    $('#iosdeveloper').show();
+  } else if( window.location.href.indexOf("?#designer") > -1 ){
+    $('#designer').show();
+  }
+};
+
+jobMarketFilter();
+
+// On Document Ready
 jQuery(document).ready(function($) {
 
   // Initialize Foundation

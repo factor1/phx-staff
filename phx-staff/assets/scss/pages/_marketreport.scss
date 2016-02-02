@@ -1,0 +1,14 @@
+// Market Report Styles
+.market-sidebar{
+  .button{
+    margin-top: 3.3rem;
+  }
+  p{
+    font-size: 0.87rem;
+  }
+}
+
+// hide jobs by default
+.market-report--job{
+  display: none;
+}
