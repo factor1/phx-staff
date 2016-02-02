@@ -13,7 +13,9 @@ get_template_part('parts/hero');
       <div class="medium-4 columns fixed-panel" style="position:fixed;">
         <?php the_content(); ?>
       </div>
-
+      <hr>
+    </div>
+    <div class="row">
       <div class="medium-8 columns">
         <?php if( have_rows('market_report') ): while( have_rows('market_report') ): the_row();?>
           <div id="<?php the_sub_field('jobmarket_id');?>">
@@ -42,6 +44,12 @@ get_template_part('parts/hero');
           </div>
         <?php endwhile; endif;?>
       </div>
+      <aside class="medium-4 columns">
+        <a href="#" class="button">
+          See All Open Positions
+        </a>
+        <p>View all current open opportunities</p>
+      </aside>
     </div>
   </section>
 <?php endwhile; endif; ?>
