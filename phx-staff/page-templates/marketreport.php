@@ -10,7 +10,7 @@ get_template_part('parts/hero');
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
   <section class="main-content">
     <div class="row">
-      <div class="medium-4 columns fixed-panel" style="position:fixed;">
+      <div class="medium-4 columns">
         <?php the_content(); ?>
       </div>
       <hr>
