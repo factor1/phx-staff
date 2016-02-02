@@ -5,6 +5,18 @@
 
 get_header();
 get_template_part('parts/hero');
+
+// Set PHP Variables for Locations used in All Open Positions
+if( is_page('284') ):
+  $location = 'Arizona';
+  $open_positions_url = 'phoenix/';
+elseif( is_page('318') ):
+  $location = 'Austin';
+  $open_positions_url = 'austin/';
+elseif( is_page('315') ):
+  $location = 'Las Vegas';
+  $open_positions_url = 'las-vegas/';
+endif;
 ?>
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -45,10 +57,10 @@ get_template_part('parts/hero');
         <?php endwhile; endif;?>
       </div>
       <aside class="medium-4 columns text-center market-sidebar">
-        <a href="#" class="button">
+        <a href="<?php bloginfo('url');?>/open-opportunities/<?php echo $open_positions_url;?>" class="button">
           See All Open Positions
         </a>
-        <p>View all current open opportunities</p>
+        <p>View all current open opportunities in <?php echo $location;?></p>
       </aside>
     </div>
   </section>

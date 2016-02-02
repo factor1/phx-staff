@@ -1,6 +1,7 @@
 /*----------------------------------------------------------------------------
   Main JS Script(s)
 ----------------------------------------------------------------------------*/
+var $ = jQuery;
 
 var jobMarketFilter = function(){
   if ( window.location.href.indexOf("?#wordpressdeveloper") > -1 ) {
