@@ -10,7 +10,7 @@ get_template_part('parts/hero');
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
   <section class="main-content">
     <div class="row">
-      <div class="medium-4 columns">
+      <div class="medium-12 columns">
         <?php the_content(); ?>
       </div>
       <hr>
@@ -44,7 +44,7 @@ get_template_part('parts/hero');
           </div>
         <?php endwhile; endif;?>
       </div>
-      <aside class="medium-4 columns">
+      <aside class="medium-4 columns text-center market-sidebar">
         <a href="#" class="button">
           See All Open Positions
         </a>
