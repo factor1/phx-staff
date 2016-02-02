@@ -18,7 +18,7 @@ get_template_part('parts/hero');
     <div class="row">
       <div class="medium-8 columns">
         <?php if( have_rows('market_report') ): while( have_rows('market_report') ): the_row();?>
-          <div id="<?php the_sub_field('jobmarket_id');?>">
+          <div id="<?php the_sub_field('jobmarket_id');?>" class="market-report--job">
 
             <?php // Job Titles Based on IDs
             $job_id = get_sub_field('jobmarket_id');

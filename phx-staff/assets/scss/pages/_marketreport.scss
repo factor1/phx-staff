@@ -7,3 +7,8 @@
     font-size: 0.87rem;
   }
 }
+
+// hide jobs by default
+.market-report--job{
+  display: none;
+}
