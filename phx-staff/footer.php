@@ -84,6 +84,14 @@
   </footer><!-- Close Footer -->
 
 
-<?php wp_footer(); ?>
+<?php wp_footer();
+
+// If we are on the job market pages fire the JS
+if( is_page('284') || is_page('318') || is_page('315') ): ?>
+  <script>
+   jobMarketFilter();
+  </script>
+<?php endif;?>
+
 </body>
 </html>

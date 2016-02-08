@@ -66,6 +66,5 @@ endif;
   </section>
 <?php endwhile; endif; ?>
 
-
 <?php
 get_footer();
