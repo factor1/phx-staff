@@ -34,12 +34,38 @@ endif;
 
             <?php // Job Titles Based on IDs
             $job_id = get_sub_field('jobmarket_id');
-            if( $job_id === 'wordpressdeveloper' ):
-              $job_title = 'WordPress Developer';
-            elseif( $job_id === 'iosdeveloper' ):
-              $job_title = 'iOS Developer';
-            elseif( $job_id === 'designer' ):
-              $job_title = 'Designer';
+            if( $job_id === 'netJava' ):
+              $job_title = 'Software Developer - .NET/Java';
+            elseif( $job_id === 'softwareDevManager' ):
+              $job_title = 'Software Development Manager';
+            elseif( $job_id === 'webDeveloper' ):
+              $job_title = 'Web Developer (HTML / CSS / JS)';
+            elseif( $job_id === 'networkEngineer' ):
+              $job_title = 'Network Engineer';
+            elseif( $job_id === 'systemsAdmin' ):
+              $job_title = 'Systems Administrator';
+            elseif( $job_id === 'endUserSupport' ):
+              $job_title = 'End User Support (Helpdesk / Desktop)';
+            elseif( $job_id === 'businessAnalyst' ):
+              $job_title = 'Business Analyst';
+            elseif( $job_id === 'projectManager' ):
+              $job_title = 'Project Manager';
+            elseif( $job_id === 'systemsEngineer' ):
+              $job_title = 'Systems Engineer';
+            elseif( $job_id === 'qaAnalyst' ):
+              $job_title = 'QA Analyst';
+            elseif( $job_id === 'databaseManager' ):
+              $job_title = 'Database Manager';
+            elseif( $job_id === 'BIDevelopers' ):
+              $job_title = 'BI Developers/Manager';
+            elseif( $job_id === 'networkAdministratorVoIP' ):
+              $job_title = 'Network Administrator - VoIP';
+            elseif( $job_id === 'phpDeveloper' ):
+              $job_title = 'PHP Developer';
+            elseif( $job_id === 'pythonDeveloper' ):
+              $job_title = 'Python Developer';
+            elseif( $job_id === 'systemsSpecialist' ):
+              $job_title = 'Systems Implementation Specialist';
             endif;
             ?>
 
