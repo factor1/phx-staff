@@ -1,0 +1,196 @@
+/*----------------------------------------------------------------------------
+  Plugin Overrides (WordPress and 3rd Party)
+----------------------------------------------------------------------------*/
+/**
+ * Gravity Forms
+ */
+// Make the labels look like h3
+.gform_wrapper .top_label .gfield_label {
+  font-family   : $header-font;
+  font-weight   : $header-font-weight;
+  font-size     : 1.5rem;
+  line-height   : 1.75rem;
+  text-transform: uppercase;
+  color         : $primary-light-color;
+}
+
+// Adjust the border of the inputs
+[type='text'],
+[type='password'],
+[type='date'],
+[type='datetime'],
+[type='datetime-local'],
+[type='month'],
+[type='week'],
+[type='email'],
+[type='number'],
+[type='search'],
+[type='tel'],
+[type='time'],
+[type='url'],
+[type='color'],
+textarea {
+  border       : em(1) solid $map-border-color;
+  border-radius: 0;
+}
+
+// Adjust the submit button
+[type='submit'],
+[type='button'] {
+  border-radius: em(50);
+}
+
+/**
+ * Staff Grid
+ */
+// style the staff grid
+.staff-item {
+  text-align     : center;
+  text-decoration: none;
+  color          : $white-color;
+
+  &:hover {
+    color: $primary-light-color;
+
+    .f1_mentor_photo_container img:nth-child(2) {
+      display: block;
+    }
+  }
+}
+
+.f1_mentor_photo_container {
+  position: relative;
+  margin  : 0 auto;
+  overflow: hidden;
+  width   : rem(100);
+  height  : rem(100);
+
+  img {
+    width        : rem(100);
+    height       : rem(100);
+    border-radius: rem(100);
+  }
+
+  img:nth-child(2) {
+    display      : none;
+    position     : absolute;
+    top          : 0;
+    left         : 0;
+    border-radius: none;
+  }
+}
+
+.f1_mentor_summary_name {
+  padding-top   : rem(15);
+  font-family   : $header-font;
+  font-weight   : 700;
+  font-size     : 1.5rem;
+  text-transform: uppercase;
+  line-height   : 1.75rem;
+}
+
+.f1_mentor_summary_title,
+.f1_mentor_summary_title small {
+  font-family: $body-font;
+  font-size  : 1rem;
+  font-weight: $body-font-weight;
+  line-height: $body-line-height;
+}
+
+// style the modal window
+.remodal {
+  padding      : em(50);
+  max-width    : rem(500);
+  border       : em(1) solid $map-border-color;
+  border-radius: 0;
+  text-align   : center;
+}
+
+// style the close button
+.remodal-close {
+  top : em(15);
+  left: 90%;
+
+  &::after {
+    content    : '\f057';
+    font-family: 'FontAwesome' !important;
+    font-size  : em(36);
+    color      : $map-border-color;
+  }
+}
+
+.remodal-close:hover.remodal-close:after,
+.remodal-close:active.remodal-close:after {
+  content    : '\f057';
+  font-family: 'FontAwesome' !important;
+  font-size  : em(36);
+  color      : $map-border-color;
+}
+
+.remodal-close:hover,
+.remodal-close:active {
+  background: $remodal-close-color;
+}
+
+// style the modal content
+.f1_mentor_details_photo_container {
+  margin-bottom: em(20);
+  text-align   : center;
+
+  img {
+    width        : rem(100);
+    height       : rem(100);
+    border-radius: rem(100);
+  }
+}
+
+.f1_mentor_details_name {
+  h2 {
+    margin: 0;
+  }
+
+  p {
+    color : $primary-color;
+    margin: 0;
+  }
+}
+
+.f1_mentor_details_social_container {
+  a {
+    text-decoration: none;
+  }
+
+  .fa-lg {
+    padding  : em(20) em(5);
+    font-size: 1.5em;
+  }
+}
+
+/**
+ * Nifty Nav
+ */
+
+.nifty-panel {
+  position: relative;
+  top: 120px;
+  background: $primary-light-color;
+}
+
+.toggle-text {
+  color: $white-color;
+  text-transform: uppercase;
+  position: absolute;
+  top: 45px;
+  right: 70px;
+}
+
+#nifty-nav-toggle {
+  top: 35px;
+  right: 30px;
+}
+
+#nifty-nav-toggle span,
+#nifty-nav-toggle span:before,
+#nifty-nav-toggle span:after {
+  background: $white-color;
+}

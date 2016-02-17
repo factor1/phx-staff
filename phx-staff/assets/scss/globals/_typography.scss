@@ -1,0 +1,80 @@
+/*----------------------------------------------------------------------------
+  Typography styles
+----------------------------------------------------------------------------*/
+// Header styles
+h1 {
+  font-family: $header-font;
+  font-weight: $header-font-weight;
+  font-size  : 5rem;
+  line-height: 5.5rem; // TODO: change all the line heights to unitless values
+  margin     : rem(40) 0;
+  color      : $white-color;
+}
+
+h2 {
+  font-family: $header-font;
+  font-weight: $header-font-weight;
+  font-size  : 2.5rem;
+  line-height: 3rem;
+  margin     : rem(50) 0 rem(40);
+  color      : $primary-light-color;
+}
+
+h3 {
+  font-family   : $header-font;
+  font-weight   : $header-font-weight;
+  font-size     : 1.5rem;
+  line-height   : 1.75rem;
+  text-transform: uppercase;
+  margin        : rem(50) 0 rem(30);
+  color         : $primary-light-color;
+}
+
+h4 {
+  font-family   : $body-font;
+  font-weight   : $header-font-weight;
+  font-size     : 1rem;
+  line-height   : 1.5rem;
+  text-transform: uppercase;
+  margin        : rem(40) 0 rem(20);
+  color         : $alternate-color;
+}
+
+// Paragraph styles
+p {
+  font-family: $body-font;
+  font-size  : 1rem;
+  font-weight: $body-font-weight;
+  line-height: $body-line-height;
+  color      : $body-color;
+}
+
+ul, ol{
+  font-family: $body-font;
+}
+
+p.featured {
+  font-size  : 1.5rem;
+  line-height: 1.875rem;
+}
+
+// Anchor styles
+a {
+  font-family    : $body-font;
+  font-size      : 1rem;
+  font-weight    : $header-font-weight;
+  line-height    : $body-line-height;
+  text-decoration: underline;
+  color          : $primary-light-color;
+
+  &:hover {
+    color: $green-color;
+  }
+}
+
+// Mobile Typography Styles
+@media screen and (max-width: 40em){
+  .banner .page-title h1{
+    font-size: 2rem !important;
+  }
+}

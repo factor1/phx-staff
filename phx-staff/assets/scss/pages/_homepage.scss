@@ -1,0 +1,285 @@
+/*----------------------------------------------------------------------------
+  Homepage styles
+----------------------------------------------------------------------------*/
+// Careers section
+.careers {
+  div div {
+    padding: 0;
+    position: relative;
+    padding: em(50) em(10);
+
+    @media screen and (min-width: rem(1000)) {
+      padding: em(50);
+    }
+
+    &:nth-child(1) {
+      background-color: $alternate-color;
+    }
+
+    &:nth-child(2) {
+      background-color: $primary-light-color;
+    }
+
+    h2 {
+      color: $white-color;
+      margin: 0;
+      text-align: center;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      i {
+        padding-left: rem(15);
+      }
+
+      a {
+        margin: 0;
+        color: $white-color;
+        font-family: $header-font;
+        font-weight: $header-font-weight;
+        font-size: rem(40);
+        text-decoration: none;
+        line-height: inherit;
+      }
+    }
+  }
+}
+
+// Nav
+.career-search {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  margin: 0 auto;
+  background-color: $alternate-color;
+  color: $white-color;
+}
+
+// List
+.career-list {
+  display: none;
+  margin: 0;
+  padding: 0 em(10) em(10);
+  list-style-type: none;
+
+  @media screen and (min-width: rem(1000)) {
+    padding: 0 em(50) em(50);
+  }
+
+
+  li {
+    display: inline-block;
+    margin: 0 0 em(5);
+    width: 49%;
+    background-color: #fff;
+    padding: em(20) 0;
+  }
+
+  a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #fff;
+    filter: grayscale(100%) opacity(40%); // will likely need a fallback for IE
+
+    &:hover {
+      filter: none;
+    }
+
+    img {
+    }
+
+    p {
+      color: $green-color;
+      font-size: 1.375rem;
+      font-family: $header-font;
+      font-weight: $header-font-weight;
+      margin: 0;
+    }
+  }
+}
+
+// Partners section
+.partners {
+  padding   : rem(40) 0;
+  text-align: center;
+
+  @media screen and (min-width: rem(1000)) {
+    padding: rem(90) 0;
+  }
+
+  h2 {
+    margin : 0;
+    padding: 0;
+  }
+}
+
+.partner-items {
+  margin: rem(40) 0 0;
+
+  a {
+    display        : inline-block;
+    margin         : 0 rem(5) rem(15);
+    padding        : 0 rem(5);
+    width          : rem(100);
+    height         : rem(100);
+    text-decoration: none;
+
+    img {
+      max-width: 100%;
+      height   : auto;
+      filter: grayscale(100%); // will likely need a fallback for IE
+    }
+
+    &:hover {
+      img {
+        filter: none;
+      }
+    }
+  }
+}
+
+// Call to Action section
+.cta {
+  padding        : 0;
+  max-width      : 100%;
+  min-height     : rem(500); // changed from height: rem(650)
+  max-height     : rem(1150);
+  background-size: cover !important;
+
+  @media screen and (min-width: rem(1000)) {
+    padding: rem(140) 0;
+  }
+
+  h2 {
+    margin: 0 0 rem(20);
+  }
+
+  p {
+    margin: 0 0 rem(20);
+  }
+
+  a {
+    margin          : 0;
+    padding         : em(10) em(50);
+    font-size       : 1.5rem;
+    background-color: $primary-light-color;
+
+    &:hover {
+      background-color: $green-color;
+    }
+  }
+}
+
+.cta-image {
+  position       : relative;
+  max-width      : 100%;
+  min-height     : rem(500); // changed from height: rem(650)
+  max-height     : rem(650);
+  background-size: cover !important;
+
+  &::before {
+    content         : '';
+    position        : absolute;
+    top             : 0;
+    right           : 0;
+    bottom          : 0;
+    left            : 0;
+    background-image: linear-gradient(to bottom, rgba(255,255,255, 0) 20%, rgba(255,255,255, 1));
+  }
+}
+
+.cta-content {
+  padding   : 0 rem(20) rem(100);
+  text-align: center;
+
+  h2 {
+    line-height: 2rem;
+    text-align : justify;
+  }
+
+  p {
+    font-size : rem(22);
+    text-align: left;
+  }
+
+  a {
+    padding  : rem(15) rem(25);
+    font-size: 1.5em;
+  }
+}
+
+// Values section
+.values {
+  div div {
+    padding   : rem(60) rem(40); // padding on the children so the background is not affected
+    text-align: center;
+
+    @media screen and (min-width: rem(1000)) {
+      padding: rem(60) rem(30);
+    }
+
+    &:nth-child(1),
+    &:nth-child(3) {
+      background-color: $gray-color;
+    }
+
+    &:nth-child(2) {
+      background-color: $white-color;
+    }
+
+    h2 {
+      margin: rem(50) 0 rem(20);
+    }
+  }
+}
+
+// Connect section
+.connect {
+  text-align      : center;
+  padding         : rem(60) rem(40);
+  background-color: $alternate-color;
+  display         : flex;
+  flex-direction  : column;
+  flex-wrap       : nowrap;
+  justify-content : center;
+  align-content   : center;
+  align-items     : center;
+
+  @media screen and (min-width: rem(1000)) {
+    flex-direction: row;
+    padding       : rem(60) 0;
+  }
+
+  h2 {
+    display  : inline;
+    margin   : 0;
+    padding  : 0 0 em(10);
+    color    : $white-color;
+    font-size: 1.75rem;
+
+    @media screen and (min-width: rem(1000)) {
+      padding  : 0 em(20) 0 0;
+      font-size: 2.5rem;
+    }
+  }
+
+  a.button.round {
+    margin          : 0;
+    padding         : em(10) em(40);
+    background-color: $white-color;
+    color           : $primary-light-color;
+    font-size       : 1.25em;
+
+    &:hover {
+      background-color: $primary-light-color;
+      color           : $white-color;
+    }
+  }
+}

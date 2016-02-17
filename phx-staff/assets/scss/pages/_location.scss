@@ -1,0 +1,82 @@
+/*----------------------------------------------------------------------------
+  Locations
+----------------------------------------------------------------------------*/
+.location {
+  a {
+    display   : block;
+    margin    : 0 auto rem(20);
+    max-width : 80%;
+    text-align: center;
+  }
+}
+
+// featured jobs
+.featured-jobs {
+  padding         : rem(75) 0;
+  background-color: $gray-color;
+  
+  h2 {
+    margin    : 0 0 rem(40);
+    text-align: center;
+  }
+
+  a {
+    text-decoration: none;
+    
+    &:hover {
+      .job-item,
+       {
+        border: em(1) solid $green-color;
+      }
+
+      .job-image {
+        border-right    : em(1) solid $green-color;
+        background-color: $white-color !important;
+      }
+    }
+  }
+}
+
+.job-item {
+  margin          : 0 0 rem(30);
+  min-height      : rem(110);
+  border          : em(1) solid $primary-light-color;
+  display         : flex;
+  flex-direction  : row;
+  flex-wrap       : nowrap;
+  justify-content : center;
+  align-content   : center;
+  align-items     : center;
+  background-color: $white-color;
+}
+
+.job-image {
+  width           : rem(120);
+  min-width       : rem(90);
+  height          : auto;
+  border-right    : em(1) solid $primary-light-color;
+  background-color: $map-border-color !important;
+  order           : 0;
+  flex            : 0 1 auto;
+  align-self      : stretch;
+}
+
+.job-content {
+  padding   : 0 rem(30);
+  width     : 80%;
+  height    : auto;
+  order     : 0;
+  flex      : 0 1 auto;
+  align-self: auto;
+  
+  h3 {
+    margin        : 0;
+    text-transform: none;
+  }
+
+  p {
+    margin     : 0;
+    font-size  : 1.25rem;
+    line-height: 1.625;
+  }
+}

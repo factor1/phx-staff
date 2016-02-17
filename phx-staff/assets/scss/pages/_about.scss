@@ -1,0 +1,24 @@
+/*----------------------------------------------------------------------------
+  About page
+----------------------------------------------------------------------------*/
+.about {
+  text-align: center;
+}
+.about-content {
+  text-align: left;
+}
+
+// In the community
+.community {
+  max-width      : 100%;
+  height         : rem(500);
+  background-size: cover !important;
+
+  h2 {
+    color: $alternate-color;
+  }
+
+  p {
+    color: $white-color;
+  }
+}

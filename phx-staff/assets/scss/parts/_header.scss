@@ -1,0 +1,52 @@
+/*----------------------------------------------------------------------------
+  Header styles
+----------------------------------------------------------------------------*/
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+  height: rem(120);
+  justify-content: space-between;
+
+  // for Nifty Nav
+  z-index         : 9999;
+  position        : relative;
+
+  .header-logo {
+    flex            : 0 1 400px;
+    height          : 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .header-menu {
+    flex            : 1 1 auto;
+    height          : 100%;
+    background-color: $alternate-color;
+    width       : 100%;
+    // mobile adjustment
+    @media screen and (max-width: 40em){
+      width: 200px;
+    }
+  }
+}
+
+.logo {
+  background-size: contain !important;
+  width          : rem(225);
+  height         : rem(70);
+  font-size      : 1rem;
+  line-height    : normal;
+  margin         : 0 40px;
+  flex: 0 1 auto;
+
+  a {
+    display: block;
+    width  : 100%;
+    height : 100%;
+    color  : transparent;
+  }
+}

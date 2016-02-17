@@ -1,0 +1,169 @@
+/*----------------------------------------------------------------------------
+  Footer styles
+----------------------------------------------------------------------------*/
+// contains the contact information
+.footer-connect {
+  background-color: $primary-color;
+  padding         : rem(20) rem(10);
+
+  i {
+    color    : $white-color;
+    font-size: 1rem;
+
+    @media screen and (min-width: rem(1000)) {
+      font-size: 1.25rem;
+    }
+  }
+
+  a {
+    color          : $green-color;
+    text-decoration: none;
+    font-size      : 1rem;
+
+    @media screen and (min-width: rem(1000)) {
+      font-size: 1.25rem;
+    }
+
+    &:hover {
+      color: $white-color;
+    }
+  }
+
+  .email,
+  .fax {
+    display     : inline-block;
+    transform   : translateY(5%);
+    margin-right: rem(10);
+
+    @media screen and (min-width: rem(1000)) {
+      margin-right: rem(20);
+      float       : left;
+    }
+  }
+
+  .social {
+    display    : inline-block;
+    color      : $white-color;
+    font-family: $body-font;
+    font-size  : 1rem;
+    margin     : rem(15) 0 0;
+
+    a {
+      padding-left: rem(10);
+    }
+
+    @media screen and (min-width: rem(1000)) {
+      transform: translateY(5%);
+      float    : right;
+      font-size: 1.25rem;
+      margin   : 0;
+    }
+
+    i {
+      color: $green-color;
+
+      &:hover {
+        color: $white-color;
+      }
+    }
+  }
+}
+
+// contains the location information
+.footer-top {
+  padding         : rem(60) rem(10);
+  background-color: $primary-med-color;
+  color           : $white-color;
+
+  @media screen and (max-width: rem(1000)) {
+    padding: rem(60) rem(10) rem(60) rem(20); // to even out the columns due to the collapse on mobile
+  }
+}
+
+// footer widgets
+#footer-widget-3,
+#footer-widget-4 {
+  margin-top: rem(75);
+
+  @media screen and (min-width: rem(640)) {
+    margin-top: 0;
+  }
+}
+
+.footer-locations {
+  h2 {
+    margin        : 0;
+    padding       : 0 0 rem(20);
+    line-height   : normal;
+    color         : $white-color;
+    font-size     : 1.5rem;
+    text-transform: uppercase;
+  }
+  p,
+  a {
+    margin         : 0;
+    padding        : 0 0 rem(5);
+    font-size      : .8rem;
+    line-height    : 1.625rem;
+    color          : $white-color;
+    text-decoration: none;
+    font-weight    : 400;
+
+    @media screen and (min-width: rem(1000)) {
+      font-size: .9rem;
+    }
+}
+
+
+
+
+
+  a:hover {
+    color: $alternate-color;
+  }
+}
+
+.menu-footer-container {
+  li {
+    display: block;
+    padding: 0 0 rem(5);
+
+    a {
+      margin        : 0;
+      padding       : 0 !important;
+      height        : auto;
+      font-size     : 1.5rem;
+      font-weight   : 700;
+      line-height   : 1.875rem !important;
+      text-transform: none;
+
+      &:hover {
+        color: $alternate-color;
+      }
+    }
+  }
+}
+
+// site credits and copyright
+.footer-bottom {
+  background-color: $primary-color;
+  text-align      : center;
+
+  a {
+    display        : inline-block;
+    padding        : rem(15) 0;
+    color          : $white-color;
+    text-decoration: none;
+    font-weight    : 400;
+    font-size      : .9rem;
+
+    &:hover {
+      color: $green-color;
+    }
+
+    strong {
+      letter-spacing: -1px;
+      font-family   : Helvetica;
+    }
+  }
+}

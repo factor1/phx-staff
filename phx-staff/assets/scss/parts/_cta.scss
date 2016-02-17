@@ -1,0 +1,31 @@
+/*----------------------------------------------------------------------------
+  Call to Action
+----------------------------------------------------------------------------*/
+.linkedin-cta {
+  background-color: $primary-med-color;
+  text-align      : center;
+  
+  h2 {
+    margin : 0;
+    padding: rem(25) 0;
+  }
+
+  a {
+    font-family    : $header-font;
+    font-weight    : $header-font-weight;
+    font-size      : 1.5rem;
+    line-height    : 1;
+    color          : $white-color;
+    text-decoration: none;
+    
+    @media screen and (min-width: rem(1000)) {
+      font-size  : 2.5rem;
+      line-height: 3rem;
+    }
+  }
+
+  img {
+    padding  : 0 rem(10);
+    transform: translateY(-10%);
+  }
+}

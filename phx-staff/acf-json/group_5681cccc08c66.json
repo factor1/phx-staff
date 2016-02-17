@@ -1,0 +1,158 @@
+{
+    "key": "group_5681cccc08c66",
+    "title": "About Us Content",
+    "fields": [
+        {
+            "key": "field_56c4e3db3ccbb",
+            "label": "Main Content",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_56c4e3ee3ccbc",
+            "label": "Title",
+            "name": "about_title",
+            "type": "text",
+            "instructions": "Add a title for this area",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Our Mission",
+            "placeholder": "Our Mission",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_56c4e4293ccbd",
+            "label": "Content",
+            "name": "about_content",
+            "type": "wysiwyg",
+            "instructions": "Add content for this area",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Phoenix Staff is a boutique technology recruiting firm that helps companies and candidates in Austin, Las Vegas, and Phoenix make their careers rise.\r\n\r\nSince 2002, job seekers and hiring managers alike have turned to us for help \u2014 not with finding more options, but for finding better options. That\u2019s why our team spends time with you upfront to understand exactly what you\u2019re looking for, including type of position, company culture, compensation, benefits requirements, and more. Then, we only introduce you to candidates or companies that match your checklist.\r\n\r\nWe believe that finding the right candidate shouldn\u2019t be so hard. Neither should finding a job you love. By taking the time to understand your specific needs, we make the perfect placements and build relationships that last long after the position is filled. We\u2019re fanatical about the right fit, and we look forward to finding yours.",
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 0
+        },
+        {
+            "key": "field_5681cce6531b6",
+            "label": "In the Community",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5681cd0b531b7",
+            "label": "Title",
+            "name": "community_title",
+            "type": "text",
+            "instructions": "What the title for this section",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "In the Community",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_5681cd25531b8",
+            "label": "Content",
+            "name": "community_content",
+            "type": "wysiwyg",
+            "instructions": "What should this section say",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 0
+        },
+        {
+            "key": "field_5681cd53531b9",
+            "label": "Background",
+            "name": "community_background",
+            "type": "image",
+            "instructions": "Upload a background image",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-templates\/about.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1455744229
+}

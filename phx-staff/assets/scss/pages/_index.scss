@@ -1,0 +1,82 @@
+/*----------------------------------------------------------------------------
+  Index.php styles (default blogroll)
+----------------------------------------------------------------------------*/
+article {
+  border-bottom: 1px solid $blog-border-color;
+  padding      : rem(50) 0;
+  
+  &:first-of-type {
+    padding: 0 0 rem(50);
+  }
+
+  &:last-of-type {
+    border: none;
+  }
+
+  // Read More button spacing
+  .button {
+    margin-top: rem(20);
+  }
+}
+
+.with-thumbnail {
+  img {
+    width : rem(245);
+    height: rem(200);
+  }
+}
+
+.blogroll-title {
+  margin     : 0;
+  line-height: normal;
+  
+  a {
+    margin         : 0;
+    font-family    : $header-font;
+    font-weight    : $header-font-weight;
+    font-size      : inherit;
+    line-height    : normal;
+    text-decoration: none;
+  }
+}
+
+// Post meta box
+.meta,
+.comments-link {
+  padding        : 0 0 rem(40);
+  font-family    : $header-font;
+  font-size      : 1.5rem;
+  font-weight    : 400;
+  line-height    : 1.75rem;
+  color          : $gray-med-color;
+  text-transform : uppercase;
+  text-decoration: none;
+}
+
+// Read more button positioning
+.read-more {
+  text-align: center;
+  
+  @media screen and (min-width: rem(640)) {
+    text-align: left;
+  }
+}
+
+// Post tags
+.tags {
+  color     : $gray-med-color;
+  text-align: center;
+  
+  @media screen and (min-width: rem(1000)) {
+    text-align: left;
+  }
+
+  a {
+    font-family    : $body-font;
+    font-weight    : 400;
+    font-size      : .75rem;
+    text-transform : uppercase;
+    text-decoration: none;
+    color          : $gray-med-color;
+  }
+}
