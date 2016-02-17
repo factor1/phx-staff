@@ -7,15 +7,16 @@ get_header();
 get_template_part('parts/hero'); ?>
 
 
-  <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
   <section class="main-content">
     <div class="row">
-      <div class="medium-10 medium-centered columns about-content">
-        <?php the_content(); ?>
+      <div class="medium-10 medium-centered columns about">
+        <h2><?php the_field( 'about_title' ); ?></h2>
+        <div class="about-content">
+          <?php the_field( 'about_content' ); ?>
+        </div>
       </div>
     </div>
   </section>
-  <?php endwhile; endif; ?>
 
 <?php
 get_template_part('parts/staff');
