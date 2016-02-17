@@ -5,11 +5,11 @@
 .footer-connect {
   background-color: $primary-color;
   padding         : rem(20) rem(10);
-  
+
   i {
     color    : $white-color;
     font-size: 1rem;
-    
+
     @media screen and (min-width: rem(1000)) {
       font-size: 1.25rem;
     }
@@ -19,7 +19,7 @@
     color          : $green-color;
     text-decoration: none;
     font-size      : 1rem;
-    
+
     @media screen and (min-width: rem(1000)) {
       font-size: 1.25rem;
     }
@@ -34,7 +34,7 @@
     display     : inline-block;
     transform   : translateY(5%);
     margin-right: rem(10);
-    
+
     @media screen and (min-width: rem(1000)) {
       margin-right: rem(20);
       float       : left;
@@ -47,7 +47,7 @@
     font-family: $body-font;
     font-size  : 1rem;
     margin     : rem(15) 0 0;
-    
+
     a {
       padding-left: rem(10);
     }
@@ -61,7 +61,7 @@
 
     i {
       color: $green-color;
-      
+
       &:hover {
         color: $white-color;
       }
@@ -74,7 +74,7 @@
   padding         : rem(60) rem(10);
   background-color: $primary-med-color;
   color           : $white-color;
-  
+
   @media screen and (max-width: rem(1000)) {
     padding: rem(60) rem(10) rem(60) rem(20); // to even out the columns due to the collapse on mobile
   }
@@ -84,13 +84,13 @@
 #footer-widget-3,
 #footer-widget-4 {
   margin-top: rem(75);
-  
+
   @media screen and (min-width: rem(640)) {
     margin-top: 0;
   }
 }
 
-.footer-widget {
+.footer-locations {
   h2 {
     margin        : 0;
     padding       : 0 0 rem(20);
@@ -99,9 +99,6 @@
     font-size     : 1.5rem;
     text-transform: uppercase;
   }
-}
-
-.textwidget {
   p,
   a {
     margin         : 0;
@@ -111,11 +108,15 @@
     color          : $white-color;
     text-decoration: none;
     font-weight    : 400;
-    
+
     @media screen and (min-width: rem(1000)) {
       font-size: .9rem;
     }
-  }
+}
+
+
+
+
 
   a:hover {
     color: $alternate-color;
@@ -126,7 +127,7 @@
   li {
     display: block;
     padding: 0 0 rem(5);
-    
+
     a {
       margin        : 0;
       padding       : 0 !important;
@@ -135,7 +136,7 @@
       font-weight   : 700;
       line-height   : 1.875rem !important;
       text-transform: none;
-      
+
       &:hover {
         color: $alternate-color;
       }
@@ -147,7 +148,7 @@
 .footer-bottom {
   background-color: $primary-color;
   text-align      : center;
-  
+
   a {
     display        : inline-block;
     padding        : rem(15) 0;
@@ -155,7 +156,7 @@
     text-decoration: none;
     font-weight    : 400;
     font-size      : .9rem;
-    
+
     &:hover {
       color: $green-color;
     }
