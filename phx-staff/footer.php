@@ -30,7 +30,7 @@
             <span class="social">
               Let's Connect:
               <?php while ( have_rows('social_profiles', 'option') ) : the_row(); ?>
-                <a href="<?php the_sub_field('social_url'); ?>"><?php the_sub_field('social_icon'); ?></a>
+                <a href="<?php the_sub_field('social_url'); ?>" target="_blank"><?php the_sub_field('social_icon'); ?></a>
               <?php endwhile; ?>
             </span>
           <?php else : ?>
