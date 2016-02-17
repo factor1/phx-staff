@@ -49,6 +49,10 @@ p {
   color      : $body-color;
 }
 
+ul, ol{
+  font-family: $body-font;
+}
+
 p.featured {
   font-size  : 1.5rem;
   line-height: 1.875rem;
