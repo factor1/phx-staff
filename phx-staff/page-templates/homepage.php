@@ -50,7 +50,6 @@ if (have_posts()) : while (have_posts()) : the_post(); ?>
   </section>
 
 
-  <?php if (have_rows('partner')) : ?><!-- Partners -->
   <section class="partners">
     <div class="row">
       <div class="medium-10 medium-centered columns">
@@ -59,17 +58,10 @@ if (have_posts()) : while (have_posts()) : the_post(); ?>
             <h2><?php the_field( 'partner_title' ); ?></h2>
           </div>
         </div>
-        <div class="partner-items">
-          <?php while (have_rows('partner')) : the_row(); ?>
-          <a href="<?php the_sub_field( 'partner_link' ); ?>">
-            <img src="<?php the_sub_field( 'partner_logo' ); ?>" alt="<?php the_sub_field( 'partner_name' ); ?>">
-          </a>
-          <?php endwhile; ?>
-        </div>
       </div>
     </div>
   </section>
-  <?php endif; ?>
+  
 
   <section class="cta hide-for-large"><!-- Mobile CTA -->
     <div class="cta-image" style="background: url('<?php the_field('home_cta_background'); ?>') left center no-repeat"></div>
