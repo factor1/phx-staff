@@ -9,7 +9,7 @@ get_header();
 
   <section class="banner">
     <div class="page-title">
-      <h1>Blog</h1>
+      <h1>Featured Jobs</h1>
     </div>
   </section>
 
