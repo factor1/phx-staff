@@ -72,8 +72,9 @@
 
   li {
     display: inline-block;
-    margin: 0 0 em(5);
-    width: 49%;
+    margin: 0;
+    width: 50%;
+    float: left;
     background-color: #fff;
     padding: em(20) 0;
   }
