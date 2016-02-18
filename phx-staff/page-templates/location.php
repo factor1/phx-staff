@@ -7,16 +7,15 @@
 // it is important the client doesn't have the option to change the slugs for the location pages in WP
 $currentLocation = get_queried_object()->post_name;
 $locationImage;
-$teamHeadline;
 if ($currentLocation == 'phoenix') {
   $locationImage = 'Arizona-Color.png';
-  $teamHeadline = 'Phoenix';
+  // $teamHeadline = 'Phoenix';
 } else if ($currentLocation == 'las-vegas') {
   $locationImage = 'Nevada-Color.png';
-  $teamHeadline = 'Las Vegas';
+  // $teamHeadline = 'Las Vegas';
 } else {
   $locationImage = 'Texas-Color.png';
-  $teamHeadline = 'Austin';
+  // $teamHeadline = 'Austin';
 }
 get_header();
 get_template_part('parts/hero'); ?>

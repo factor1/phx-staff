@@ -8,13 +8,13 @@
 
  $slug = get_queried_object()->post_name; // grab the slug of the current page
 
- // if ($currentLocation == 'phoenix') {
- //   $teamHeadline = 'Phoenix';
- // } else if ($currentLocation == 'las-vegas') {
- //   $teamHeadline = 'Las Vegas';
- // } else {
- //   $teamHeadline = 'Austin';
- // }
+ if ($currentLocation == 'phoenix') {
+   $teamHeadline = 'Phoenix';
+ } else if ($currentLocation == 'las-vegas') {
+   $teamHeadline = 'Las Vegas';
+ } else {
+   $teamHeadline = 'Austin';
+ }
  ?>
 
 
