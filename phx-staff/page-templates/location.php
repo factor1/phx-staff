@@ -9,13 +9,10 @@ $currentLocation = get_queried_object()->post_name;
 $locationImage;
 if ($currentLocation == 'phoenix') {
   $locationImage = 'Arizona-Color.png';
-  // $teamHeadline = 'Phoenix';
 } else if ($currentLocation == 'las-vegas') {
   $locationImage = 'Nevada-Color.png';
-  // $teamHeadline = 'Las Vegas';
 } else {
   $locationImage = 'Texas-Color.png';
-  // $teamHeadline = 'Austin';
 }
 get_header();
 get_template_part('parts/hero'); ?>

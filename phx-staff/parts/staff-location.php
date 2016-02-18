@@ -8,9 +8,9 @@
 
  $slug = get_queried_object()->post_name; // grab the slug of the current page
 
- if ($currentLocation == 'phoenix') {
+ if ($slug == 'phoenix') {
    $teamHeadline = 'Phoenix';
- } else if ($currentLocation == 'las-vegas') {
+ } else if ($slug == 'las-vegas') {
    $teamHeadline = 'Las Vegas';
  } else {
    $teamHeadline = 'Austin';
