@@ -38,7 +38,6 @@ if (have_posts()) : while (have_posts()) : the_post(); ?>
               </a>
             </li>
           </ul>
-          <br class="clearfix">
         </nav>
       </div>
 
