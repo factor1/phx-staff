@@ -55,21 +55,31 @@ get_template_part('parts/hero'); ?>
 <?php
 get_template_part('parts/staff', 'location');
 get_template_part('parts/linkedin');
-if(have_rows('location_jobs')) : ?>
+
+// WP_Query arguments for Featured Jobs
+$args = array (
+	'post_type'              => array( 'featured_jobs' ),
+	'category_name'          => $currentLocation,
+);
+
+// The Query
+$query = new WP_Query( $args );
+if($query->have_posts() ):
+?>
 
   <section class="featured-jobs">
     <div class="row">
       <div class="medium-10 medium-centered columns">
         <h2><?php the_field('jobs_headline'); ?></h2>
         <div class="row small-up-1 medium-up-2">
-          <?php while(have_rows('location_jobs')) : the_row(); ?>
+          <?php while($query->have_posts() ) : $query->the_post(); ?>
           <div class="column">
             <a href="">
               <div class="job-item">
                 <div class="job-image" style="background: url('<?php echo get_template_directory_uri(); ?>/assets/img/<?php echo $locationImage; ?>') center center no-repeat"></div>
                 <div class="job-content">
-                  <h3><?php the_sub_field('location_job_title'); ?></h3>
-                  <p><?php echo get_the_title(); ?></p>
+                  <h3><?php the_title(); ?></h3>
+                  <p><?php the_excerpt(); ?></p>
                 </div>
               </div>
             </a>
