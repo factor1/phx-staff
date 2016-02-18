@@ -74,7 +74,7 @@ if($query->have_posts() ):
         <div class="row small-up-1 medium-up-2">
           <?php while($query->have_posts() ) : $query->the_post(); ?>
           <div class="column">
-            <a href="">
+            <a href="<?php the_permalink();?>">
               <div class="job-item">
                 <div class="job-image" style="background: url('<?php echo get_template_directory_uri(); ?>/assets/img/<?php echo $locationImage; ?>') center center no-repeat"></div>
                 <div class="job-content">
