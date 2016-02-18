@@ -79,7 +79,7 @@ if($query->have_posts() ):
                 <div class="job-image" style="background: url('<?php echo get_template_directory_uri(); ?>/assets/img/<?php echo $locationImage; ?>') center center no-repeat"></div>
                 <div class="job-content">
                   <h3><?php the_title(); ?></h3>
-                  <p><?php the_excerpt(); ?></p>
+                  <?php the_excerpt(); ?>
                 </div>
               </div>
             </a>
