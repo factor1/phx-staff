@@ -5,7 +5,8 @@
  ?>
 
 <div class="meta">
-  <span><?php the_time('F jS, Y') ?></span>
+  <span><?php the_time('F jS, Y') ?></span><br>
+  <span><?php echo get_cat_name();?></span>
   <?php
     if ( comments_open() ) {
       echo '|' . ' ';
