@@ -38,6 +38,7 @@ if (have_posts()) : while (have_posts()) : the_post(); ?>
               </a>
             </li>
           </ul>
+          <div class="clearfix">
         </nav>
       </div>
 
@@ -61,7 +62,7 @@ if (have_posts()) : while (have_posts()) : the_post(); ?>
       </div>
     </div>
   </section>
-  
+
 
   <section class="cta hide-for-large"><!-- Mobile CTA -->
     <div class="cta-image" style="background: url('<?php the_field('home_cta_background'); ?>') left center no-repeat"></div>
