@@ -113,3 +113,6 @@ if (!$image_set == 'none') {
  * Customize the Yoast SEO columns
  */
 add_filter('wpseo_use_page_analysis', '__return_false');
+
+// Add Custom Image Sizes
+add_image_size( 'staff-photo', 100, 100, array( 'center', 'center' ) );
