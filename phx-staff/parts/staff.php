@@ -45,7 +45,7 @@
 
           <div class="remodal" data-remodal-id="modal-<?php the_ID();?>">
             <div class="f1_mentor_details_photo_container">
-              <?php if (has_post_thumbnail()) the_post_thumbnail(); ?>
+              <?php if (has_post_thumbnail()) the_post_thumbnail('staff-photo'); ?>
             </div>
 
             <div class="f1_mentor_details_name">
