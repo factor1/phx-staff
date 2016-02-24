@@ -29,7 +29,7 @@
           <div class="column">
             <a class="staff-item" data-remodal-target="modal-<?php the_ID(); ?>">
               <div class="f1_mentor_photo_container">
-                <?php if (has_post_thumbnail()) the_post_thumbnail(); ?>
+                <?php if (has_post_thumbnail()) the_post_thumbnail('staff-photo'); ?>
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Staff-Hover.png" alt="" />
               </div>
 
