@@ -3,39 +3,45 @@
 ----------------------------------------------------------------------------*/
 var $ = jQuery;
 
+var scrollTo = function(){
+  $('html, body').animate({
+      scrollTop: $this.offset().top
+  }, 500);
+}
+
 var jobMarketFilter = function(){
   if ( window.location.href.indexOf("?#netJava") > -1 ) {
-    $('#netJava').show();
+    $this = $('#netJava');
   } else if( window.location.href.indexOf("?#softwareDevManager") > -1 ){
-    $('#softwareDevManager').show();
+    $this = $('#softwareDevManager');
   } else if( window.location.href.indexOf("?#webDeveloper") > -1 ){
-    $('#webDeveloper').show();
+    $this = $('#webDeveloper');
   } else if( window.location.href.indexOf("?#networkEngineer") > -1 ){
-    $('#networkEngineer').show();
+    $this = $('#networkEngineer');
   } else if( window.location.href.indexOf("?#systemsAdmin") > -1 ){
-    $('#systemsAdmin').show();
+    $this = $('#systemsAdmin');
   } else if( window.location.href.indexOf("?#endUserSupport") > -1 ){
-    $('#endUserSupport').show();
+    $this = $('#endUserSupport');
   } else if( window.location.href.indexOf("?#businessAnalyst") > -1 ){
-    $('#businessAnalyst').show();
+    $this = $('#businessAnalyst');
   } else if( window.location.href.indexOf("?#projectManager") > -1 ){
-    $('#projectManager').show();
+    $this = $('#projectManager');
   } else if( window.location.href.indexOf("?#systemsEngineer") > -1 ){
-    $('#systemsEngineer').show();
+    $this = $('#systemsEngineer');
   } else if( window.location.href.indexOf("?#qaAnalyst") > -1 ){
-    $('#qaAnalyst').show();
+    $this = $('#qaAnalyst');
   } else if( window.location.href.indexOf("?#databaseManager") > -1 ){
-    $('#databaseManager').show();
+    $this = $('#databaseManager');
   } else if( window.location.href.indexOf("?#BIDevelopers") > -1 ){
-    $('#BIDevelopers').show();
+    $this = $('#BIDevelopers');
   } else if( window.location.href.indexOf("?#networkAdministratorVoIP") > -1 ){
-    $('#networkAdministratorVoIP').show();
+    $this = $('#networkAdministratorVoIP');
   } else if( window.location.href.indexOf("?#phpDeveloper") > -1 ){
-    $('#phpDeveloper').show();
+    $this = $('#phpDeveloper');
   } else if( window.location.href.indexOf("?#pythonDeveloper") > -1 ){
-    $('#pythonDeveloper').show();
+    $this = $('#pythonDeveloper');
   } else if( window.location.href.indexOf("?#systemsSpecialist") > -1 ){
-    $('#systemsSpecialist').show();
+    $this = $('#systemsSpecialist');
   }
 };
 
