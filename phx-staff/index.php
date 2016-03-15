@@ -6,9 +6,10 @@
 get_header();
 ?>
 
+
   <section class="banner">
     <div class="page-title">
-      <h1>Blog</h1>
+      <h1>Featured Jobs</h1>
     </div>
   </section>
 
@@ -65,6 +66,6 @@ get_header();
     </div>
   </section>
 
+
 <?php
-get_sidebar();
 get_footer();

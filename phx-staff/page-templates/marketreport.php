@@ -5,63 +5,91 @@
 
 get_header();
 get_template_part('parts/hero');
+
+// Set PHP Variables for Locations used in All Open Positions
+if( is_page('284') ):
+  $location = 'Arizona';
+  $open_positions_url = 'phoenix/';
+elseif( is_page('318') ):
+  $location = 'Austin';
+  $open_positions_url = 'austin/';
+elseif( is_page('315') ):
+  $location = 'Las Vegas';
+  $open_positions_url = 'las-vegas/';
+endif;
 ?>
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
   <section class="main-content">
     <div class="row">
-      <div class="medium-4 columns  fixed-panel" style="position:fixed;">
+      <div class="medium-12 columns">
         <?php the_content(); ?>
       </div>
-      
-      
-      
-            <div class="medium-6  columns">
-  <h2 id="Designer">Designers</h2>
-<p>Montes tempus adipiscing tempor per blandit velit vestibulum leo curabitur dui facilisi massa vestibulum duis consectetur. Diam in curabitur parturient sem varius primis urna a id platea parturient integer hendrerit aliquam parturient a tortor sem est parturient porta quis condimentum in quam. A aptent ipsum vehicula vivamus consequat condimentum ac vestibulum dis lectus a est eu gravida. Parturient mi a a adipiscing porta elit ut arcu leo metus semper elementum eu parturient conubia parturient.</p>
+      <hr>
+    </div>
+    <div class="row">
+      <div class="medium-8 columns">
+        <?php if( have_rows('market_report') ): while( have_rows('market_report') ): the_row();?>
+          <div id="<?php the_sub_field('jobmarket_id');?>" class="market-report--job">
 
-<p>Est ullamcorper viverra lectus a inceptos sem interdum consectetur magna ullamcorper a natoque suscipit dis ultricies sed a eu a per a tellus ultricies a vivamus morbi viverra. Felis ullamcorper in aliquam fermentum cursus quis suspendisse ullamcorper suspendisse suspendisse ridiculus per mus accumsan a placerat a ut aptent sed a adipiscing conubia potenti sed. A vestibulum scelerisque hac vestibulum vestibulum amet condimentum himenaeos in a felis vehicula eros sit adipiscing et curae. Ultricies sodales luctus fringilla vestibulum condimentum habitant scelerisque taciti a dignissim suspendisse nascetur vulputate ullamcorper a suscipit vivamus gravida penatibus integer mattis amet. Magna ac nec vestibulum fusce ut mi a vestibulum suscipit tincidunt cras a sit luctus a consequat sit sociis iaculis nulla. A parturient elementum est morbi aenean a parturient egestas aliquet integer hac litora penatibus nisi magnis curabitur ullamcorper molestie suspendisse a.</p>
+            <?php // Job Titles Based on IDs
+            $job_id = get_sub_field('jobmarket_id');
+            if( $job_id === 'netJava' ):
+              $job_title = 'Software Developer - .NET/Java';
+            elseif( $job_id === 'softwareDevManager' ):
+              $job_title = 'Software Development Manager';
+            elseif( $job_id === 'webDeveloper' ):
+              $job_title = 'Web Developer (HTML / CSS / JS)';
+            elseif( $job_id === 'networkEngineer' ):
+              $job_title = 'Network Engineer';
+            elseif( $job_id === 'systemsAdmin' ):
+              $job_title = 'Systems Administrator';
+            elseif( $job_id === 'endUserSupport' ):
+              $job_title = 'End User Support (Helpdesk / Desktop)';
+            elseif( $job_id === 'businessAnalyst' ):
+              $job_title = 'Business Analyst';
+            elseif( $job_id === 'projectManager' ):
+              $job_title = 'Project Manager';
+            elseif( $job_id === 'systemsEngineer' ):
+              $job_title = 'Systems Engineer';
+            elseif( $job_id === 'qaAnalyst' ):
+              $job_title = 'QA Analyst';
+            elseif( $job_id === 'databaseManager' ):
+              $job_title = 'Database Manager';
+            elseif( $job_id === 'BIDevelopers' ):
+              $job_title = 'BI Developers/Manager';
+            elseif( $job_id === 'networkAdministratorVoIP' ):
+              $job_title = 'Network Administrator - VoIP';
+            elseif( $job_id === 'phpDeveloper' ):
+              $job_title = 'PHP Developer';
+            elseif( $job_id === 'pythonDeveloper' ):
+              $job_title = 'Python Developer';
+            elseif( $job_id === 'systemsSpecialist' ):
+              $job_title = 'Systems Implementation Specialist';
+            endif;
+            ?>
 
-<h4>Salary Information for this position</h4>
-	<p><strong>High:</strong> $85,000<br>
-			<strong>Low:</strong> $35,000<br>
-			<strong>Median in Market:</strong> $55,000</p>
+            <h2><?php echo $job_title; ?></h2>
 
+            <?php the_sub_field('jobmarket_content');?>
 
+            <span><strong>Low Salary: <?php the_sub_field('jobmarket_lowsalary');?></strong></span>
+            <br>
+            <span><strong>High Salary: <?php the_sub_field('jobmarket_highsalary');?></strong></span>
+            <br>
+            <span><strong>Median Salary: <?php the_sub_field('jobmarket_mediansalary');?></strong></span>
 
-  <h2 id="WordPressDeveloper" style="padding-top:450px;">WordPress Developers</h2>
-<p>Montes tempus adipiscing tempor per blandit velit vestibulum leo curabitur dui facilisi massa vestibulum duis consectetur. Diam in curabitur parturient sem varius primis urna a id platea parturient integer hendrerit aliquam parturient a tortor sem est parturient porta quis condimentum in quam. A aptent ipsum vehicula vivamus consequat condimentum ac vestibulum dis lectus a est eu gravida. Parturient mi a a adipiscing porta elit ut arcu leo metus semper elementum eu parturient conubia parturient.</p>
-
-<p>Est ullamcorper viverra lectus a inceptos sem interdum consectetur magna ullamcorper a natoque suscipit dis ultricies sed a eu a per a tellus ultricies a vivamus morbi viverra. Felis ullamcorper in aliquam fermentum cursus quis suspendisse ullamcorper suspendisse suspendisse ridiculus per mus accumsan a placerat a ut aptent sed a adipiscing conubia potenti sed. A vestibulum scelerisque hac vestibulum vestibulum amet condimentum himenaeos in a felis vehicula eros sit adipiscing et curae. Ultricies sodales luctus fringilla vestibulum condimentum habitant scelerisque taciti a dignissim suspendisse nascetur vulputate ullamcorper a suscipit vivamus gravida penatibus integer mattis amet. Magna ac nec vestibulum fusce ut mi a vestibulum suscipit tincidunt cras a sit luctus a consequat sit sociis iaculis nulla. A parturient elementum est morbi aenean a parturient egestas aliquet integer hac litora penatibus nisi magnis curabitur ullamcorper molestie suspendisse a.</p>
-
-<h4>Salary Information for this position</h4>
-	<p><strong>High:</strong> $85,000<br>
-			<strong>Low:</strong> $55,000<br>
-			<strong>Median in Market:</strong> $75,000</p>
-			
-			
-<h2 id="iOSAppDeveloper" style="padding-top:450px;">iOS app Developers</h2>
-<p>Montes tempus adipiscing tempor per blandit velit vestibulum leo curabitur dui facilisi massa vestibulum duis consectetur. Diam in curabitur parturient sem varius primis urna a id platea parturient integer hendrerit aliquam parturient a tortor sem est parturient porta quis condimentum in quam. A aptent ipsum vehicula vivamus consequat condimentum ac vestibulum dis lectus a est eu gravida. Parturient mi a a adipiscing porta elit ut arcu leo metus semper elementum eu parturient conubia parturient.</p>
-
-<p>Est ullamcorper viverra lectus a inceptos sem interdum consectetur magna ullamcorper a natoque suscipit dis ultricies sed a eu a per a tellus ultricies a vivamus morbi viverra. Felis ullamcorper in aliquam fermentum cursus quis suspendisse ullamcorper suspendisse suspendisse ridiculus per mus accumsan a placerat a ut aptent sed a adipiscing conubia potenti sed. A vestibulum scelerisque hac vestibulum vestibulum amet condimentum himenaeos in a felis vehicula eros sit adipiscing et curae. Ultricies sodales luctus fringilla vestibulum condimentum habitant scelerisque taciti a dignissim suspendisse nascetur vulputate ullamcorper a suscipit vivamus gravida penatibus integer mattis amet. Magna ac nec vestibulum fusce ut mi a vestibulum suscipit tincidunt cras a sit luctus a consequat sit sociis iaculis nulla. A parturient elementum est morbi aenean a parturient egestas aliquet integer hac litora penatibus nisi magnis curabitur ullamcorper molestie suspendisse a.</p>
-
-<h4>Salary Information for this position</h4>
-	<p><strong>High:</strong> $125,000<br>
-			<strong>Low:</strong> $65,000<br>
-			<strong>Median in Market:</strong> $95,000</p>
-  
+          </div>
+        <?php endwhile; endif;?>
       </div>
-      
-      
-      
-      
+      <aside class="medium-4 columns text-center market-sidebar">
+        <a href="<?php bloginfo('url');?>/open-opportunities/<?php echo $open_positions_url;?>" class="button">
+          See All Open Positions
+        </a>
+        <p>View all current open opportunities in <?php echo $location;?></p>
+      </aside>
     </div>
   </section>
-  
- 
-  
-
-
 <?php endwhile; endif; ?>
 
 <?php

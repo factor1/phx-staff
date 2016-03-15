@@ -21,6 +21,7 @@
 
 // Default styles
 @import 'globals/typography';
+@import 'globals/global';
 @import 'components/buttons';
 
 // Template parts
@@ -39,6 +40,10 @@
 @import 'pages/location';
 @import 'pages/homepage';
 @import 'pages/404';
+@import 'pages/marketreport';
+
+// Helper Classes
+@import 'globals/helpers';
 
 /*----------------------------------------------------------------------------
   Plugins

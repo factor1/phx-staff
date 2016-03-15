@@ -2,6 +2,7 @@
 /**
  * Template Name: Locations
  */
+
 // grab the right image based on the current page
 // it is important the client doesn't have the option to change the slugs for the location pages in WP
 $currentLocation = get_queried_object()->post_name;
@@ -44,31 +45,41 @@ get_template_part('parts/hero'); ?>
       </div>
     </div>
   </section>
-  
-      <div class="row">
-    	<div class="medium-10 medium-centered columns">
+
+  <div class="row">
+  	<div class="medium-10 medium-centered columns">
     	<?php the_content(); ?>
-    	</div>
-    </div>
+  	</div>
+  </div>
 
 <?php
 get_template_part('parts/staff', 'location');
 get_template_part('parts/linkedin');
-if(have_rows('location_jobs')) : ?>
+
+// WP_Query arguments for Featured Jobs
+$args = array (
+	'post_type'              => array( 'featured_jobs' ),
+	'category_name'          => $currentLocation,
+);
+
+// The Query
+$query = new WP_Query( $args );
+if($query->have_posts() ):
+?>
 
   <section class="featured-jobs">
     <div class="row">
       <div class="medium-10 medium-centered columns">
         <h2><?php the_field('jobs_headline'); ?></h2>
         <div class="row small-up-1 medium-up-2">
-          <?php while(have_rows('location_jobs')) : the_row(); ?>
+          <?php while($query->have_posts() ) : $query->the_post(); ?>
           <div class="column">
-            <a href="">
+            <a href="<?php the_permalink();?>">
               <div class="job-item">
-                <div class="job-image" style="background: url('<?php echo get_template_directory_uri(); ?>/assets/img/<?php echo $locationImage ?>') center center no-repeat"></div>
+                <div class="job-image" style="background: url('<?php echo get_template_directory_uri(); ?>/assets/img/<?php echo $locationImage; ?>') center center no-repeat"></div>
                 <div class="job-content">
-                  <h3><?php the_sub_field('location_job_title'); ?></h3>
-                  <p><?php echo get_the_title(); ?></p>
+                  <h3><?php the_title(); ?></h3>
+                  <?php the_excerpt(); ?>
                 </div>
               </div>
             </a>
@@ -80,8 +91,6 @@ if(have_rows('location_jobs')) : ?>
   </section>
 
 <?php endif; ?>
-
-<!-- The rest is API and James will handle -->
 
 
 <?php
