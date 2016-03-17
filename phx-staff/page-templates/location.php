@@ -53,7 +53,9 @@ get_template_part('parts/hero'); ?>
   </div>
 
 <?php
-get_template_part('parts/staff', 'location');
+if( !is_page(74) ):
+  get_template_part('parts/staff', 'location');
+endif;
 get_template_part('parts/linkedin');
 
 // WP_Query arguments for Featured Jobs
