@@ -66,6 +66,8 @@ endif;
               $job_title = 'Python Developer';
             elseif( $job_id === 'systemsSpecialist' ):
               $job_title = 'Systems Implementation Specialist';
+            elseif( $job_id === 'implementationManager' )
+              $job_title = 'Implementation Manager';
             endif;
             ?>
 
