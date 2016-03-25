@@ -20,13 +20,13 @@ if (have_posts()) : while (have_posts()) : the_post(); ?>
               </a>
             </li>
             <li>
-              <a href="<?php home_url(); ?>/open-opportunities/las-vegas/">
+              <a href="<?php home_url(); ?>/open-opportunities/austin/">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Texas-Color.png">
                 <p>Austin, TX</p>
               </a>
             </li>
             <li>
-              <a href="<?php home_url(); ?>/open-opportunities/austin/">
+              <a href="<?php home_url(); ?>/open-opportunities/las-vegas/">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Nevada-Color.png">
                 <p>Las Vegas, NV</p>
               </a>
