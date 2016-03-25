@@ -18,3 +18,9 @@ alexander@factor1studios.com
 In the Gulpfile.js "Serve" task, be sure two things are present:
 1. A server is setup and a local path is set. The proxy created by BrowserSync will depend on this in order to properly create the local URL
 2. The local path is set in the `proxy` field. Right now it is set to `phx-staff:8888` because that is what it is on my local development. Be sure to replace it with your own path.
+
+## Remote Repositories
+Production:
+```
+ssh://phoenixstaff@64.91.237.141/home/phoenixstaff/repos/phx-staff.git
+```
