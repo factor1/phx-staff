@@ -132,8 +132,10 @@ if( is_page('284') || is_page('318') || is_page('315') ): ?>
 <div class="remodal" data-remodal-id="1share">
 <button data-remodal-action="close" class="remodal-close"></button>
 <h2>Share this Job with a friend</h2>
-<h4><a href="<?php the_permalink();?>"><?php echo esc_html($job->Name); ?></a></h4>
-Request URI <?php "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]" ?> 
+<h4><a href="<?php echo "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]" ?> ">
+			<?php echo "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]" ?> 
+			</a></h4>
+
 
       			
 </div>
