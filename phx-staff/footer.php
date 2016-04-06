@@ -135,6 +135,10 @@ if( is_page('284') || is_page('318') || is_page('315') ): ?>
 <h4><a href="<?php echo "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]" ?> ">
 			<?php echo "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]" ?> 
 			</a></h4>
+			
+			<a href="mailto:?subject=A Great Job&body=Check out this open position <?php echo "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]" ?> ">
+			Email to a friend
+			</a>
 
 
       			
