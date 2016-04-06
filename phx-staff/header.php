@@ -36,6 +36,12 @@
 <meta name="msapplication-wide310x150logo" content="<?php echo get_template_directory_uri(); ?>/assets/favicon/mstile-310x150.png" />
 <meta name="msapplication-square310x310logo" content="<?php echo get_template_directory_uri(); ?>/assets/favicon/mstile-310x310.png" />
 
+<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/assets/plugins/js/remodal.css">
+<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/assets/plugins/js/remodal-default-theme.css">
+<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/assets/css/forwardmodal.css">
+<script src="<?php bloginfo('template_url'); ?>/assets/plugins/js/remodal.js"></script>
+
+
   <?php
   gravity_form_enqueue_scripts( 1, true );
   wp_head(); ?>

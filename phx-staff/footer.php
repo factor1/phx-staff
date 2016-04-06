@@ -123,5 +123,23 @@ if( is_page('284') || is_page('318') || is_page('315') ): ?>
   </script>
 <?php endif;?>
 
+
+<!-- ======================
+	            	Remodals! 
+       ====================== -->
+
+
+<div class="remodal" data-remodal-id="1share">
+<button data-remodal-action="close" class="remodal-close"></button>
+<h2>Share this Job with a friend</h2>
+<h4><a href="<?php the_permalink();?>"><?php the_permalink();?></a></h4>
+
+
+      			
+</div>
+
+
+
+
 </body>
 </html>
