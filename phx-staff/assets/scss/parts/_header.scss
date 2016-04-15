@@ -28,7 +28,7 @@ header {
     background-color: $alternate-color;
     width       : 100%;
     // mobile adjustment
-    @media screen and (max-width: 40em){
+    @media screen and (max-width: 43em){
       width: 200px;
     }
   }
