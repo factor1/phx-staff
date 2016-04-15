@@ -123,5 +123,29 @@ if( is_page('284') || is_page('318') || is_page('315') ): ?>
   </script>
 <?php endif;?>
 
+
+<!-- ======================
+	            	Remodals! 
+       ====================== -->
+
+
+<div class="remodal" data-remodal-id="1share">
+<button data-remodal-action="close" class="remodal-close"></button>
+<h2>Share this Job with a friend</h2>
+<h4><a href="<?php echo "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]" ?> ">
+			<?php echo "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]" ?> 
+			</a></h4>
+			
+			<a href="mailto:?subject=A Great Job&body=Check out this open position <?php echo "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]" ?> ">
+			Email to a friend
+			</a>
+
+
+      			
+</div>
+
+
+
+
 </body>
 </html>
