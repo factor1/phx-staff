@@ -4,6 +4,9 @@
  *
  * Template file including the head of the document and primary navigation
  */
+
+ // Decalre Page ID for Charities page:
+ $charities = 559;
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?> class="no-js">
@@ -14,7 +17,7 @@
   <?php if ( is_singular() && pings_open( get_queried_object() ) ) : ?>
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
   <?php endif; ?>
-  
+
 <link rel="apple-touch-icon-precomposed" sizes="57x57" href="<?php echo get_template_directory_uri(); ?>/assets/favicon/apple-touch-icon-57x57.png" />
 <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo get_template_directory_uri(); ?>/assets/favicon/apple-touch-icon-114x114.png" />
 <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo get_template_directory_uri(); ?>/assets/favicon/apple-touch-icon-72x72.png" />
@@ -62,6 +65,7 @@
       <?php endif; ?>
     </div>
 
+    <?php if (is_page($charities)) : ?>
     <div class="header-menu">
       <div class="mobile-menu hide-for-large"><!-- Mobile menu -->
         <span class="toggle-text"><!-- Mobile Hamburger -->
@@ -73,8 +77,23 @@
         <?php wp_nav_menu( array('theme_location' => 'primary', 'container' => 'nav')); ?>
       </div>
     </div>
+  <?php else :?>
+    <div class="header-menu">
+      <div class="mobile-menu hide-for-large"><!-- Mobile menu -->
+        <span class="toggle-text"><!-- Mobile Hamburger -->
+          Menu
+        </span>
+        <a id="nifty-nav-toggle" class="mm_open"><span></span></a>
+      </div>
+      <div class="desktop-menu show-for-large"><!-- Desktop menu -->
+        <?php wp_nav_menu( array('theme_location' => 'primary', 'container' => 'nav')); ?>
+      </div>
+    </div>
+  <?php endif; ?>
+
+
   </header><!-- Close Header -->
-  
+
   <div class="nifty-panel"><!-- Mobile Navigation Panel -->
     <?php wp_nav_menu( array('theme_location' => 'primary', 'container' => 'nav', 'depth' => 2) ); ?>
   </div>

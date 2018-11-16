@@ -32,6 +32,16 @@ header {
       width: 200px;
     }
   }
+  .header-menu--charities {
+    flex            : 1 1 auto;
+    height          : 100%;
+    background-color: #fff;
+    width       : 100%;
+    // mobile adjustment
+    @media screen and (max-width: 43em){
+      width: 200px;
+    }
+  }
 }
 
 .logo {
