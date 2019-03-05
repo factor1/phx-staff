@@ -30,50 +30,6 @@ get_template_part('parts/hero'); ?>
             <div class="location-item">
               <div class="location-map">
                 <div id="phoenix-map" style="width:100%; height:270px; z-index:0;"></div>
-                <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
-                <script>
-                  function gmapsBackgroundInit(){
-                    var map;
-                    var latlng = new google.maps.LatLng(<?php the_field('latitude', 'option'); ?>, <?php the_field('longitude', 'option'); ?>);
-                    var myLatLng = new google.maps.LatLng(<?php the_field('latitude', 'option'); ?>, <?php the_field('longitude', 'option'); ?>);
-                    var stylez = [
-                      { stylers: [{
-                        saturation: 0,
-                        lightness: 0
-                        }]
-                      }
-                    ];
-
-                    var mapOptions = {
-                      zoom: 15,
-                      center: latlng,
-                      scrollwheel: false,
-                      mapTypeControlOptions: {
-                        mapTypeIds: []
-                      }
-                    };
-                    map = new google.maps.Map(document.getElementById("phoenix-map"), mapOptions);
-
-                    var styledMapOptions = {
-                      name: "I + M"
-                    }
-
-                    var jayzMapType = new google.maps.StyledMapType(stylez, styledMapOptions);
-
-                    map.mapTypes.set('I + M', jayzMapType);
-                    map.setMapTypeId('I + M');
-
-                    var image = '<?php echo get_template_directory_uri(); ?>/assets/img/LocationPin.png';
-
-                    var beachMarker = new google.maps.Marker({
-                      position: myLatLng,
-                      map: map,
-                      animation: google.maps.Animation.DROP,
-                      icon: image
-                    });
-                  }
-                  gmapsBackgroundInit();
-                </script>
               </div>
 
               <div class="location-info">
@@ -91,49 +47,6 @@ get_template_part('parts/hero'); ?>
             <div class="location-item">
               <div class="location-map">
                 <div id="vegas-map" style="width:100%; height:270px; z-index:0;"></div>
-                <script>
-                  function gmapsBackgroundInit(){
-                    var map;
-                    var latlng = new google.maps.LatLng(<?php the_field('vegas_latitude', 'option'); ?>, <?php the_field('vegas_longitude', 'option'); ?>);
-                    var myLatLng = new google.maps.LatLng(<?php the_field('vegas_latitude', 'option'); ?>, <?php the_field('vegas_longitude', 'option'); ?>);
-                    var stylez = [
-                      { stylers: [{
-                        saturation: 0,
-                        lightness: 0
-                        }]
-                      }
-                    ];
-
-                    var mapOptions = {
-                      zoom: 15,
-                      center: latlng,
-                      scrollwheel: false,
-                      mapTypeControlOptions: {
-                        mapTypeIds: []
-                      }
-                    };
-                    map = new google.maps.Map(document.getElementById("vegas-map"), mapOptions);
-
-                    var styledMapOptions = {
-                      name: "I + M"
-                    }
-
-                    var jayzMapType = new google.maps.StyledMapType(stylez, styledMapOptions);
-
-                    map.mapTypes.set('I + M', jayzMapType);
-                    map.setMapTypeId('I + M');
-
-                    var image = '<?php echo get_template_directory_uri(); ?>/assets/img/LocationPin.png';
-
-                    var beachMarker = new google.maps.Marker({
-                      position: myLatLng,
-                      map: map,
-                      animation: google.maps.Animation.DROP,
-                      icon: image
-                    });
-                  }
-                  gmapsBackgroundInit();
-                </script>
               </div>
 
               <div class="location-info">
@@ -151,49 +64,6 @@ get_template_part('parts/hero'); ?>
             <div class="location-item">
               <div class="location-map">
                 <div id="austin-map" style="width:100%; height:270px; z-index:0;"></div>
-                <script>
-                  function gmapsBackgroundInit(){
-                    var map;
-                    var latlng = new google.maps.LatLng(<?php the_field('austin_latitude', 'option'); ?>, <?php the_field('austin_longitude', 'option'); ?>);
-                    var myLatLng = new google.maps.LatLng(<?php the_field('austin_latitude', 'option'); ?>, <?php the_field('austin_longitude', 'option'); ?>);
-                    var stylez = [
-                      { stylers: [{
-                        saturation: 0,
-                        lightness: 0
-                        }]
-                      }
-                    ];
-
-                    var mapOptions = {
-                      zoom: 15,
-                      center: latlng,
-                      scrollwheel: false,
-                      mapTypeControlOptions: {
-                        mapTypeIds: []
-                      }
-                    };
-                    map = new google.maps.Map(document.getElementById("austin-map"), mapOptions);
-
-                    var styledMapOptions = {
-                      name: "I + M"
-                    }
-
-                    var jayzMapType = new google.maps.StyledMapType(stylez, styledMapOptions);
-
-                    map.mapTypes.set('I + M', jayzMapType);
-                    map.setMapTypeId('I + M');
-
-                    var image = '<?php echo get_template_directory_uri(); ?>/assets/img/LocationPin.png';
-
-                    var beachMarker = new google.maps.Marker({
-                      position: myLatLng,
-                      map: map,
-                      animation: google.maps.Animation.DROP,
-                      icon: image
-                    });
-                  }
-                  gmapsBackgroundInit();
-                </script>
               </div>
 
               <div class="location-info">
@@ -211,6 +81,73 @@ get_template_part('parts/hero'); ?>
     </div>
   </section>
 
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTFWPHuyTF2hM6hGXXLSbf41TRLTSPbJY&callback=initMaps" type="text/javascript"></script>
+  <script>
+    var mapsArray = [
+      {
+        id: 'phoenix-map',
+        lat:  <?php the_field('latitude', 'option'); ?>,
+        long: <?php the_field('longitude', 'option'); ?>,
+      },
+      {
+        id: 'vegas-map',
+        lat: <?php the_field('vegas_latitude', 'option'); ?>,
+        long: <?php the_field('vegas_longitude', 'option'); ?>,
+      },
+      {
+        id: 'austin-map',
+        lat: <?php the_field('austin_latitude', 'option'); ?>,
+        long: <?php the_field('austin_longitude', 'option'); ?>,
+      }
+    ];
+
+
+    function gmapsBackgroundInit(id, lat, long){
+      var map;
+      var latlng = new google.maps.LatLng(lat, long);
+      var stylez = [
+        { stylers: [{
+          saturation: 0,
+          lightness: 0
+          }]
+        }
+      ];
+
+      var mapOptions = {
+        zoom: 15,
+        center: latlng,
+        scrollwheel: false,
+        mapTypeControlOptions: {
+          mapTypeIds: []
+        }
+      };
+      map = new google.maps.Map(document.getElementById(id), mapOptions);
+
+      var styledMapOptions = {
+        name: "I + M"
+      }
+
+      var jayzMapType = new google.maps.StyledMapType(stylez, styledMapOptions);
+
+      map.mapTypes.set('I + M', jayzMapType);
+      map.setMapTypeId('I + M');
+
+      var image = '<?php echo get_template_directory_uri(); ?>/assets/img/LocationPin.png';
+
+      var beachMarker = new google.maps.Marker({
+        position: latlng,
+        map: map,
+        animation: google.maps.Animation.DROP,
+        icon: image
+      });
+    }
+
+    function initMaps() {
+      for(var i = 0; i < mapsArray.length; i++) {
+        gmapsBackgroundInit(mapsArray[i].id, mapsArray[i].lat, mapsArray[i].long);
+      }
+    }
+  </script>
 
 <?php
 get_footer();
