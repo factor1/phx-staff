@@ -5,3 +5,7 @@ Author URI: http://factor1studios.com
 Description: Custom theme for Phoenix Staff
 Version: 0.0.1
 */
+
+.charities > a {
+  color: #000;
+}
