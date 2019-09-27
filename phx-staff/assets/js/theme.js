@@ -16,7 +16,7 @@ jQuery(document).ready(function($) {
   $('.career-list li').matchHeight();
 
   // Nifty Nav Adjustments
-  $('.nifty-panel .menu li.menu-item-95 a').attr('href', '#');
+  $('.nifty-panel .menu li.menu-item-95 > a').attr('href', '#');
 
   // Homepage Career Search
   $('#career-toggle').on('click', function(){
