@@ -9,3 +9,65 @@ Version: 0.0.1
 .charities > a {
   color: #000;
 }
+
+
+/* // Feature page Hero  */
+.hero.featurepage {
+	height: 700px;	
+}
+
+@media screen and (max-width: 1024px) {
+		.hero.featurepage {
+	    min-height: 17rem;
+	    height: auto;
+	    }
+	
+	}
+
+
+/* // 50/50 splits */
+
+
+section.featuresplits .medium-6 {
+    position: relative;
+    padding: 50px;
+    margin-bottom: 0px;
+    min-height: 200px;
+    }
+
+@media screen and (max-width: 1024px) {
+		section.featuresplits .medium-6 {
+	    min-height: 100px;
+	    }
+	
+	}
+
+section.featuresplits .medium-6.fill-blue h2 {
+  color: #fff;
+  padding: 0;
+  height: 150px;
+  margin: 25% 0 0;
+  text-align: center;
+
+  }
+      
+
+
+
+section.featuresplits .medium-6.fill-blue {
+	background-color: #00a1df;
+}
+
+.contentwrap {
+	max-width: 600px;
+	}
+
+section.featuresplits .medium-6 .contentwrap.right {
+	float: right;
+}
+
+
+.contentwrap p,
+.contentwrap li {
+	font-size: 22px;
+}
