@@ -1,0 +1,38 @@
+// Feature page Hero 
+.hero.featurepage {
+	min-height: 700px;	
+}
+
+
+// 50/50 splits
+
+
+.featuresplits div div {
+	padding: 0;
+    position: relative;
+    padding: em(50) em(10);
+
+    @media screen and (min-width: rem(1000)) {
+      padding: em(50);
+    }
+
+    &:nth-child(1) {
+      background-color: $alternate-color;
+    }
+
+    &:nth-child(2) {
+      background-color: $primary-light-color;
+    }
+
+    h2 {
+      color: $white-color;
+      margin: 0;
+      text-align: center;
+      }
+      
+
+
+
+.fill-blue {
+	background-color: $alternate-color;
+}
