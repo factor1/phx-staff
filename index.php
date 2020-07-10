@@ -8,12 +8,16 @@ get_header();
 $isBlog = is_home();
 $isCat = is_category();
 $isTag = is_tag();
+
+$isPodcast = is_category('podcast');
 ?>
 
 
   <section class="banner">
     <div class="page-title">
-      <?php if( $isBlog || $isCat || $isTag ) : ?>
+      <?php if( $isPodcast ) : ?>
+        <h1>Podcasts</h1>
+      <?php elseif( $isBlog || $isCat || $isTag ) : ?>
         <h1>Blog</h1>
       <?php else : ?>
         <h1>Featured Jobs</h1>
