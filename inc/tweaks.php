@@ -116,3 +116,11 @@ add_filter('wpseo_use_page_analysis', '__return_false');
 
 // Add Custom Image Sizes
 add_image_size( 'staff-photo', 100, 100, array( 'center', 'center' ) );
+
+// Adjust queries
+function adjust_queries($query) {
+  if( !is_admin() && is_home() && $query->is_main_query() ) {
+     $query->set('category__not_in', 59); // not podcast
+  }
+}
+add_filter('pre_get_posts', 'adjust_queries');
