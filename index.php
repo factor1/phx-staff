@@ -4,12 +4,20 @@
  */
 
 get_header();
+
+$isBlog = is_home();
+$isCat = is_category();
+$isTag = is_tag();
 ?>
 
 
   <section class="banner">
     <div class="page-title">
-      <h1>Featured Jobs</h1>
+      <?php if( $isBlog || $isCat || $isTag ) : ?>
+        <h1>Blog</h1>
+      <?php else : ?>
+        <h1>Featured Jobs</h1>
+      <?php endif; ?>
     </div>
   </section>
 

@@ -13,7 +13,7 @@ Version: 0.0.1
 
 /* // Feature page Hero  */
 .hero.featurepage {
-	height: 700px;	
+	height: 700px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -21,7 +21,7 @@ Version: 0.0.1
 	    min-height: 17rem;
 	    height: auto;
 	    }
-	
+
 	}
 
 
@@ -39,7 +39,7 @@ section.featuresplits .medium-6 {
 		section.featuresplits .medium-6 {
 	    min-height: 100px;
 	    }
-	
+
 	}
 
 section.featuresplits .medium-6.fill-blue h2 {
@@ -50,7 +50,7 @@ section.featuresplits .medium-6.fill-blue h2 {
   text-align: center;
 
   }
-      
+
 
 
 
@@ -70,4 +70,8 @@ section.featuresplits .medium-6 .contentwrap.right {
 .contentwrap p,
 .contentwrap li {
 	font-size: 22px;
+}
+
+.with-thumbnail img {
+  height: auto;
 }
