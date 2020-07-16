@@ -18,11 +18,6 @@
             <i class="fa fa-envelope"></i>
               <a href="mailto:info@phoenixstaff.com">info@phoenixstaff.com</a>
           </span>
-
-          <span class="fax">
-            <i class="fa fa-fax"></i>
-              <a href="fax:602.254.6363">602.254.6363</a>
-          </span>
         </div>
 
         <div class="small-12 large-6 columns text-center">
@@ -48,7 +43,6 @@
             <p><?php the_field('address', 'option') ?> <?php the_field('address_2', 'option') ?></p>
             <p><?php the_field('city', 'option') ?>, <?php the_field('state', 'option') ?> <?php the_field('zip', 'option') ?></p>
             <p>Phone: <?php the_field('phone', 'option') ?></p>
-            <p>Fax: <?php the_field('fax', 'option') ?></p>
             <p>Email: <a href="mailto:<?php the_field('email', 'option') ?>">Phoenix Area Info</a></p>
           </div>
           <div class="small-6 columns">
@@ -56,7 +50,6 @@
             <p><?php the_field('vegas_address', 'option') ?> <?php the_field('vegas_address_2', 'option') ?></p>
             <p><?php the_field('vegas_city', 'option') ?>, <?php the_field('vegas_state', 'option') ?> <?php the_field('vegas_zip', 'option') ?></p>
             <p>Phone: <?php the_field('vegas_phone', 'option') ?></p>
-            <p>Fax: <?php the_field('vegas_fax', 'option') ?></p>
             <p>Email: <a href="mailto:<?php the_field('vegas_email', 'option') ?>">Las Vegas Area Info</a></p>
           </div>
         </div>
@@ -66,7 +59,6 @@
             <p><?php the_field('austin_address_1', 'option') ?> <?php the_field('austin_address_2', 'option') ?></p>
             <p><?php the_field('austin_city', 'option') ?>, <?php the_field('austin_state', 'option') ?> <?php the_field('austin_zip', 'option') ?></p>
             <p>Phone: <?php the_field('austin_phone', 'option') ?></p>
-            <p>Fax: <?php the_field('austin_fax', 'option') ?></p>
             <p>Email: <a href="mailto:<?php the_field('austin_email', 'option') ?>">Austin Area Info</a></p>
           </div>
           <div class="small-6 columns">
@@ -82,7 +74,6 @@
             <p><?php the_field('address', 'option') ?> <?php the_field('address_2', 'option') ?></p>
             <p><?php the_field('city', 'option') ?>, <?php the_field('state', 'option') ?> <?php the_field('zip', 'option') ?></p>
             <p>Phone: <?php the_field('phone', 'option') ?></p>
-            <p>Fax: <?php the_field('fax', 'option') ?></p>
             <p>Email: <a href="mailto:<?php the_field('email', 'option') ?>">Phoenix Area Info</a></p>
           </div>
           <div class="medium-3 footer-locations columns">
@@ -90,7 +81,6 @@
             <p><?php the_field('vegas_address', 'option') ?> <?php the_field('vegas_address_2', 'option') ?></p>
             <p><?php the_field('vegas_city', 'option') ?>, <?php the_field('vegas_state', 'option') ?> <?php the_field('vegas_zip', 'option') ?></p>
             <p>Phone: <?php the_field('vegas_phone', 'option') ?></p>
-            <p>Fax: <?php the_field('vegas_fax', 'option') ?></p>
             <p>Email: <a href="mailto:<?php the_field('vegas_email', 'option') ?>">Las Vegas Area Info</a></p>
           </div>
           <div class="medium-3 footer-locations columns">
@@ -98,7 +88,6 @@
             <p><?php the_field('austin_address_1', 'option') ?> <?php the_field('austin_address_2', 'option') ?></p>
             <p><?php the_field('austin_city', 'option') ?>, <?php the_field('austin_state', 'option') ?> <?php the_field('austin_zip', 'option') ?></p>
             <p>Phone: <?php the_field('austin_phone', 'option') ?></p>
-            <p>Fax: <?php the_field('austin_fax', 'option') ?></p>
             <p>Email: <a href="mailto:<?php the_field('austin_email', 'option') ?>">Austin Area Info</a></p>
           </div>
           <div class="medium-3 columns">
@@ -125,7 +114,7 @@ if( is_page('284') || is_page('318') || is_page('315') ): ?>
 
 
 <!-- ======================
-	            	Remodals! 
+	            	Remodals!
        ====================== -->
 
 
@@ -133,15 +122,15 @@ if( is_page('284') || is_page('318') || is_page('315') ): ?>
 <button data-remodal-action="close" class="remodal-close"></button>
 <h2>Share this Job with a friend</h2>
 <h4><a href="<?php echo "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]" ?> ">
-			<?php echo "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]" ?> 
+			<?php echo "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]" ?>
 			</a></h4>
-			
+
 			<a href="mailto:?subject=A Great Job&body=Check out this open position <?php echo "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]" ?> ">
 			Email to a friend
 			</a>
 
 
-      			
+
 </div>
 
 
