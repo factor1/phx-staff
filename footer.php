@@ -39,28 +39,14 @@
       <div class="hide-for-medium"><!-- Mobile only -->
         <div class="row collapse">
           <div class="small-6 columns">
-            <h2>Phoenix Office</h2>
-            <p><?php the_field('address', 'option') ?> <?php the_field('address_2', 'option') ?></p>
-            <p><?php the_field('city', 'option') ?>, <?php the_field('state', 'option') ?> <?php the_field('zip', 'option') ?></p>
-            <p>Phone: <?php the_field('phone', 'option') ?></p>
-            <p>Email: <a href="mailto:<?php the_field('email', 'option') ?>">Phoenix Area Info</a></p>
-          </div>
-          <div class="small-6 columns">
-            <h2>Las Vegas Office</h2>
-            <p><?php the_field('vegas_address', 'option') ?> <?php the_field('vegas_address_2', 'option') ?></p>
-            <p><?php the_field('vegas_city', 'option') ?>, <?php the_field('vegas_state', 'option') ?> <?php the_field('vegas_zip', 'option') ?></p>
-            <p>Phone: <?php the_field('vegas_phone', 'option') ?></p>
-            <p>Email: <a href="mailto:<?php the_field('vegas_email', 'option') ?>">Las Vegas Area Info</a></p>
+            <h2 style="color: #fff">Corporate Office</h2>
+            <p style="color: #fff"><?php the_field('address', 'option') ?> <?php the_field('address_2', 'option') ?></p>
+            <p style="color: #fff"><?php the_field('city', 'option') ?>, <?php the_field('state', 'option') ?> <?php the_field('zip', 'option') ?></p>
+            <p style="color: #fff">Phone: <?php the_field('phone', 'option') ?></p>
+            <p style="color: #fff">Email: <a href="mailto:<?php the_field('email', 'option') ?>" style="color: #fff">Phoenix Area Info</a></p>
           </div>
         </div>
         <div class="row collapse">
-          <div class="small-6 columns">
-            <h2>Austin Office</h2>
-            <p><?php the_field('austin_address_1', 'option') ?> <?php the_field('austin_address_2', 'option') ?></p>
-            <p><?php the_field('austin_city', 'option') ?>, <?php the_field('austin_state', 'option') ?> <?php the_field('austin_zip', 'option') ?></p>
-            <p>Phone: <?php the_field('austin_phone', 'option') ?></p>
-            <p>Email: <a href="mailto:<?php the_field('austin_email', 'option') ?>">Austin Area Info</a></p>
-          </div>
           <div class="small-6 columns">
             <?php if(is_active_sidebar('footer-widget-4')) dynamic_sidebar('footer-widget-4'); ?>
           </div>
@@ -70,25 +56,11 @@
       <div class="show-for-medium"><!-- Desktop only -->
         <div class="row">
           <div class="medium-3 footer-locations columns">
-            <h2>Phoenix Office</h2>
+            <h2>Corporate Office</h2>
             <p><?php the_field('address', 'option') ?> <?php the_field('address_2', 'option') ?></p>
             <p><?php the_field('city', 'option') ?>, <?php the_field('state', 'option') ?> <?php the_field('zip', 'option') ?></p>
             <p>Phone: <?php the_field('phone', 'option') ?></p>
             <p>Email: <a href="mailto:<?php the_field('email', 'option') ?>">Phoenix Area Info</a></p>
-          </div>
-          <div class="medium-3 footer-locations columns">
-            <h2>Las Vegas Office</h2>
-            <p><?php the_field('vegas_address', 'option') ?> <?php the_field('vegas_address_2', 'option') ?></p>
-            <p><?php the_field('vegas_city', 'option') ?>, <?php the_field('vegas_state', 'option') ?> <?php the_field('vegas_zip', 'option') ?></p>
-            <p>Phone: <?php the_field('vegas_phone', 'option') ?></p>
-            <p>Email: <a href="mailto:<?php the_field('vegas_email', 'option') ?>">Las Vegas Area Info</a></p>
-          </div>
-          <div class="medium-3 footer-locations columns">
-            <h2>Austin Office</h2>
-            <p><?php the_field('austin_address_1', 'option') ?> <?php the_field('austin_address_2', 'option') ?></p>
-            <p><?php the_field('austin_city', 'option') ?>, <?php the_field('austin_state', 'option') ?> <?php the_field('austin_zip', 'option') ?></p>
-            <p>Phone: <?php the_field('austin_phone', 'option') ?></p>
-            <p>Email: <a href="mailto:<?php the_field('austin_email', 'option') ?>">Austin Area Info</a></p>
           </div>
           <div class="medium-3 columns">
             <?php if(is_active_sidebar('footer-widget-4')) dynamic_sidebar('footer-widget-4'); ?>
