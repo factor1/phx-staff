@@ -41,38 +41,6 @@ get_template_part('parts/hero'); ?>
               </div>
             </div>
           </div><!-- close Phoenix Office -->
-
-          <div class="medium-4 columns"><!-- Las Vegas Office -->
-            <div class="location-item">
-              <div class="location-map">
-                <div id="vegas-map" style="width:100%; height:270px; z-index:0;"></div>
-              </div>
-
-              <div class="location-info">
-                <h3>Las Vegas Office</h3>
-                <p><?php the_field('vegas_address', 'option') ?> <?php the_field('vegas_address_2', 'option') ?></p>
-                <p><?php the_field('vegas_city', 'option') ?>, <?php the_field('vegas_state', 'option') ?> <?php the_field('vegas_zip', 'option') ?></p>
-                <p>Phone: <?php the_field('vegas_phone', 'option') ?></p>
-                <p>Email: <a href="mailto:<?php the_field('vegas_email', 'option') ?>">Las Vegas Area Info</a></p>
-              </div>
-            </div>
-          </div><!-- close Las Vegas Office -->
-
-          <div class="medium-4 columns"><!-- Austin Office -->
-            <div class="location-item">
-              <div class="location-map">
-                <div id="austin-map" style="width:100%; height:270px; z-index:0;"></div>
-              </div>
-
-              <div class="location-info">
-                <h3>Austin Office</h3>
-                <p><?php the_field('austin_address_1', 'option') ?> <?php the_field('austin_address_2', 'option') ?></p>
-                <p><?php the_field('austin_city', 'option') ?>, <?php the_field('austin_state', 'option') ?> <?php the_field('austin_zip', 'option') ?></p>
-                <p>Phone: <?php the_field('austin_phone', 'option') ?></p>
-                <p>Email: <a href="mailto:<?php the_field('austin_email', 'option') ?>">Austin Area Info</a></p>
-              </div>
-            </div>
-          </div><!-- close Austin Office -->
         </div>
       </div>
     </div>
@@ -85,19 +53,8 @@ get_template_part('parts/hero'); ?>
         id: 'phoenix-map',
         lat:  <?php the_field('latitude', 'option'); ?>,
         long: <?php the_field('longitude', 'option'); ?>,
-      },
-      {
-        id: 'vegas-map',
-        lat: <?php the_field('vegas_latitude', 'option'); ?>,
-        long: <?php the_field('vegas_longitude', 'option'); ?>,
-      },
-      {
-        id: 'austin-map',
-        lat: <?php the_field('austin_latitude', 'option'); ?>,
-        long: <?php the_field('austin_longitude', 'option'); ?>,
       }
     ];
-
 
     function gmapsBackgroundInit(id, lat, long){
       var map;
