@@ -75,3 +75,13 @@ section.featuresplits .medium-6 .contentwrap.right {
 .with-thumbnail img {
   height: auto;
 }
+
+/* Hero text size fix */
+
+@media screen and (max-width: 768px) {
+	.hero .page-title h1,
+	.hero-homepage .page-title h1 {
+		padding: 2.5rem 25px;
+		font-size: 40px;
+	}
+}
